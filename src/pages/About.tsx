@@ -1,5 +1,4 @@
 import { Mail, Linkedin } from "lucide-react";
-import profileImage from "figma:asset/6430bf823d3f6ce09591cf26928a889aa10bd466.png";
 
 export function About() {
   return (
@@ -10,7 +9,7 @@ export function About() {
             {/* Left Side - Image Only */}
             <div className="flex justify-center md:justify-start">
               <img
-                src={profileImage}
+                src={"public/about.jpeg"}
                 alt="Ashu Adhikari"
                 className="w-64 h-64 object-cover rounded-lg"
               />

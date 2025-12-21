@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/ashuadh7/", // <--- CRITICAL: Keeps your site working on GitHub
+  base: "/", // <--- CRITICAL: Keeps your site working on GitHub
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     // We must keep these aliases because Figma code likely uses them

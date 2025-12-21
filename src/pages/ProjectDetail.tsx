@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Tag, Target, FlaskConical, TrendingUp, Wrench } from 'lucide-react';
+import { ArrowLeft, Calendar, Target, FlaskConical, TrendingUp, Wrench } from 'lucide-react';
 import { getProjectById } from '../data/projects';
 
 export function ProjectDetail() {
