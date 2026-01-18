@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Layers } from 'lucide-react';
 import { projects } from '../data/projects';
+import { Footer } from '@/components/Footer';
 
 export function ProjectsHome() {
   return (
@@ -37,9 +38,7 @@ export function ProjectsHome() {
         ))}
       </div>
       
-      <footer className="mt-20 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
-        <p>&copy; 2025 Ashu Adhikari. All rights reserved.</p>
-      </footer>
+    <Footer />
     </main>
   );
 }

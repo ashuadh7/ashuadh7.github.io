@@ -1,4 +1,5 @@
 import { Mail, Linkedin } from "lucide-react";
+import { Footer } from "@/components/Footer";
 
 export function About() {
   return (
@@ -9,7 +10,7 @@ export function About() {
             {/* Left Side - Image Only */}
             <div className="flex justify-center md:justify-start">
               <img
-                src={"public/about.jpeg"}
+                src="/about.jpeg"
                 alt="Ashu Adhikari"
                 className="w-64 h-64 object-cover rounded-lg"
               />
@@ -130,13 +131,15 @@ export function About() {
                 <div className="flex flex-wrap gap-4">
                   <a
                     href="mailto:ashuadh7@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
                   >
                     <Mail className="w-5 h-5" />
                     ashuadh7@gmail.com
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/ashu-adhikari"
+                    href="https://www.linkedin.com/in/ashua"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors"
@@ -151,9 +154,7 @@ export function About() {
         </div>
       </div>
 
-      <footer className="py-8 text-center text-gray-500 text-sm">
-        <p>&copy; 2025 Ashu Adhikari. All rights reserved.</p>
-      </footer>
+      <Footer />
     </main>
   );
 }
