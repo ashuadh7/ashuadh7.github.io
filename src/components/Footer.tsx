@@ -1,9 +1,7 @@
-const Footer = () => {
+export function Footer() {
     return (
-        <footer className="text-center py-4 text-gray-600">
-            <p>&copy; {new Date().getFullYear()} Ashu Adhikari. All rights reserved.</p>
+        <footer className="py-8 text-center text-gray-500 text-sm border-t border-gray-200 mt-12">
+            <p>&copy; 2026 Ashu Adhikari. All rights reserved.</p>
         </footer>
     );
-};
-
-export default Footer;
+}       
