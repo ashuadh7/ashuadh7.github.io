@@ -69,7 +69,8 @@ export const booksData: Book[] = [
         authors: ['Trevor Noah'],
         category: 'completed',
         coverImage: 'https://upload.wikimedia.org/wikipedia/en/f/fd/Born_a_Crime_by_Trevor_Noah_%28book_cover%29.jpg',
-        notes: 'This book, along with Half of a Yellow Sun, helped me see how much humans share beneath the surface of culture. We often treat our own customs as singular and view others as fundamentally different. But when we look closely, those differences thin out. Climate, geography, flora, fauna, and resources shape culture, but power structures, struggles, fears, hopes, and love shape individuals and collectives much more convergently than we care to admit.'
+        notes: 'This book, along with Half of a Yellow Sun, helped me see how much humans share beneath the surface of culture. We often treat our own customs as singular and view others as fundamentally different. But when we look closely, those differences thin out. Climate, geography, flora, fauna, and resources shape culture, but power structures, struggles, fears, hopes, and love shape individuals and collectives much more convergently than we care to admit.',
+        dateCompleted: '2024-05-20'
     },
     {
         id: 'catch-22',
