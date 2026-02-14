@@ -15,88 +15,93 @@ export function About() {
               />
             </div>
 
-            <div className="space-y-10">
+            <div className="space-y-7">
               <div>
+                <h1 className="mb-3 text-2xl sm:text-3xl font-semibold tracking-tight text-primary">
+                  About Me
+                </h1>
                 <p className="text-secondary leading-relaxed">
-                  Hi, I&apos;m Ashu, a developer and researcher specializing in
-                  virtual reality (VR). My work focuses on designing intuitive,
-                  embodied interactions that enhance user experience and
-                  immersion in digital environments.
+                  Hi, I&apos;m Ashu, an interaction designer and HCI researcher
+                  focused on communication through intuitive interaction. I work
+                  across XR and interactive systems, with a strong interest in
+                  embodied interaction and information visualization to help
+                  people express intent more clearly and use technology more
+                  naturally. I am currently a PhD student at the University of
+                  Waterloo in the{" "}
+                  <a
+                    href="https://www.jeffjianzhao.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover-text-accent-strong transition-colors"
+                  >
+                    WVisdom Lab
+                  </a>{" "}
+                  under the supervision of Dr. Jian Zhao.
                 </p>
               </div>
 
               <section>
-                <h2 className="mb-4 text-primary">What I Do</h2>
+                <h2 className="mb-3 text-xl sm:text-2xl font-semibold tracking-tight text-primary">
+                  What I Do
+                </h2>
                 <ul className="space-y-3">
                   <li className="text-secondary">
-                    <span className="text-primary">VR Interaction & UI/UX Design</span>{" "}
-                    - Exploring and refining how people interact with virtual
-                    environments to improve usability and engagement.
-                  </li>
-                  <li className="text-secondary">
-                    <span className="text-primary">
-                      Immersive Experience Development
+                    <span className="text-primary font-semibold">
+                      XR Interaction & UI/UX Design
                     </span>{" "}
-                    - Independently building interactive applications in Unity
-                    and Unreal Engine, from coding to basic asset creation.
+                    - Designing interaction patterns that make immersive systems
+                    feel natural, learnable, and usable.
                   </li>
                   <li className="text-secondary">
-                    <span className="text-primary">Research & Prototyping</span>{" "}
-                    - Experienced in every stage of the research process,
-                    including literature review, study design, software
-                    development, user studies, data analysis, and writing
-                    findings. I collaborate with teams and apply both technical
-                    and research expertise to every project.
-                  </li>
-                  <li className="text-secondary">
-                    <span className="text-primary">
-                      Data Visualization & Analysis
+                    <span className="text-primary font-semibold">
+                      Embodied Interaction Research
                     </span>{" "}
-                    - Transforming complex data into clear, intuitive visuals
-                    that make insights accessible to collaborators outside the
-                    field.
+                    - Studying how movement and physical actions in XR can
+                    improve how people understand, control, and communicate
+                    through digital environments.
+                  </li>
+                  <li className="text-secondary">
+                    <span className="text-primary font-semibold">
+                      Research & Prototyping
+                    </span>{" "}
+                    - Building and evaluating interaction concepts through
+                    iterative prototypes, user studies, and collaborative
+                    research.
+                  </li>
+                  <li className="text-secondary">
+                    <span className="text-primary font-semibold">
+                      Information Visualization
+                    </span>{" "}
+                    - Turning complex information into clear visual forms so
+                    ideas are easier to read, share, and act on.
                   </li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="mb-4 text-primary">Background & Experience</h2>
+                <h2 className="mb-3 text-xl sm:text-2xl font-semibold tracking-tight text-primary">
+                  Background & Experience
+                </h2>
                 <div className="space-y-4 text-secondary">
                   <p>
                     I hold a Master&apos;s degree in Interactive Arts and
                     Technology from Simon Fraser University and a
                     Bachelor&apos;s degree in Electronics and Communication
-                    Engineering from Tribhuvan University. My master&apos;s
-                    thesis focused on VR locomotion techniques to address
-                    spatial disorientation and motion sickness.
-                  </p>
-                  <p>
-                    I have collaborated with researchers, developers, and
-                    designers on projects ranging from emotion regulation in VR
-                    to biofeedback-driven meditation experiences. I have also
-                    taught advanced game design and UI/UX principles as a
-                    lecturer in computer science and contributed to industry
-                    projects that integrate immersive technologies into
-                    interactive applications.
+                    Engineering from Tribhuvan University. I&apos;ve worked
+                    across XR interaction design, prototyping, and HCI research
+                    in both academic and applied settings.
                   </p>
                 </div>
               </section>
 
-              <section>
-                <h2 className="mb-4 text-primary">What I&apos;m Working On</h2>
-                <p className="text-secondary leading-relaxed">
-                  I am currently starting my PhD, focusing on embedded
-                  interactions for VR. My research aims to push the boundaries
-                  of interaction design in virtual environments, making them
-                  more natural, accessible, and engaging.
-                </p>
-              </section>
-
-              <section className="pt-6 border-t border-default">
-                <h2 className="mb-4 text-primary">Let&apos;s Connect!</h2>
+              <section className="pt-6">
+                <h2 className="mb-3 text-xl sm:text-2xl font-semibold tracking-tight text-primary">
+                  Let&apos;s Connect!
+                </h2>
                 <p className="text-secondary mb-6">
-                  I am always open to collaborations, discussions on VR and
-                  HCI, and new opportunities. Feel free to reach out!
+                  I am always open to collaborations, discussions on XR,
+                  interaction design, and HCI, and new opportunities. Feel free
+                  to reach out!
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a
@@ -128,4 +133,3 @@ export function About() {
     </main>
   );
 }
-

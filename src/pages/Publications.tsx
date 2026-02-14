@@ -1,4 +1,5 @@
 import { publicationsData } from "../data/publications";
+import { Footer } from "@/components/Footer";
 
 export function Publications() {
   const categories = [
@@ -80,9 +81,7 @@ export function Publications() {
         </div>
       </div>
 
-      <footer className="py-12 text-center text-muted text-sm mt-12">
-        <p>&copy; 2026 Ashu Adhikari. All rights reserved.</p>
-      </footer>
+      <Footer />
     </main>
   );
 }
