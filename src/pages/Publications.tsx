@@ -15,11 +15,7 @@ export function Publications() {
           // Even indices are normal text, odd indices are bold (wrapped in **)
           if (index % 2 === 1) {
             return (
-              <strong
-                key={index}
-                className="font-bold text-primary"
-                style={{ fontWeight: 700 }}
-              >
+              <strong key={index} className="font-semibold text-primary">
                 {part}
               </strong>
             );
@@ -47,26 +43,23 @@ export function Publications() {
 
             return (
               <section key={category}>
-                <h2 className="text-lg sm:text-xl font-bold text-accent mb-5 sm:mb-6">
+                <h2 className="text-lg sm:text-xl font-semibold text-accent mb-5 sm:mb-6">
                   {category}
                 </h2>
                 <div className="flex flex-col">
                   {categoryPubs.map((pub) => (
                     <div
                       key={pub.id}
-                      className="pl-4 sm:pl-5 border-l-4 border-default border-solid mb-8 sm:mb-10 last:mb-0"
+                      className="pl-4 sm:pl-5 border-l-[3px] border-publication border-solid mb-8 sm:mb-10 last:mb-0"
                     >
-                      <h3
-                        className="text-lg font-bold text-primary mb-1 leading-tight"
-                        style={{ fontWeight: 700 }}
-                      >
+                      <h3 className="text-[1.15rem] sm:text-[1.2rem] font-semibold text-primary mb-1 leading-snug">
                         {pub.title}
                       </h3>
-                      <p className="text-sm text-secondary mb-1">
+                      <p className="text-base text-secondary mb-1 leading-relaxed">
                         {renderAuthors(pub.authors)}
                       </p>
                       {pub.venue && (
-                        <p className="text-sm text-muted italic mb-2">
+                        <p className="text-base text-muted mb-2 leading-relaxed">
                           {pub.venue}
                         </p>
                       )}
@@ -74,7 +67,7 @@ export function Publications() {
                         href={pub.linkUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm font-medium text-accent hover-text-accent-strong transition-colors inline-block"
+                        className="text-base font-medium text-accent hover-text-accent-strong transition-colors inline-block"
                       >
                         {pub.linkText}
                       </a>
