@@ -33,15 +33,10 @@ function getInitialMode(): ThemeMode {
 
 function getInitialAccent(): AccentTheme {
   const saved = localStorage.getItem(ACCENT_KEY);
-  if (
-    saved === "violet" ||
-    saved === "indigo" ||
-    saved === "emerald" ||
-    saved === "rose"
-  ) {
+  if (saved === "indigo" || saved === "emerald" || saved === "rose") {
     return saved;
   }
-  return "violet";
+  return "indigo";
 }
 
 export function ThemeProvider({ children }: { children?: ReactNode }) {

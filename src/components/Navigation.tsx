@@ -1,10 +1,30 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Layers, User, BookOpen, LandPlot } from 'lucide-react';
+import { Layers, User, BookOpen, LandPlot, Sun, Moon } from 'lucide-react';
 import { useTheme } from '@/theme/ThemeProvider';
 
 export function Navigation() {
     const location = useLocation();
     const { mode, accent, toggleMode, setAccent } = useTheme();
+    const accentOptions = [
+        {
+            key: 'indigo',
+            label: 'Indigo',
+            swatchClass: 'bg-[#4f46e5]',
+            activeRingClass: 'ring-[#312e81]',
+        },
+        {
+            key: 'emerald',
+            label: 'Emerald',
+            swatchClass: 'bg-[#059669]',
+            activeRingClass: 'ring-[#065f46]',
+        },
+        {
+            key: 'rose',
+            label: 'Rose',
+            swatchClass: 'bg-[#e11d48]',
+            activeRingClass: 'ring-[#9f1239]',
+        },
+    ] as const;
 
     const navItems = [
         { path: '/', label: 'Projects', shortLabel: 'Projects', icon: Layers },
@@ -38,24 +58,34 @@ export function Navigation() {
                             <button
                                 type="button"
                                 onClick={toggleMode}
-                                className="px-3 py-2 rounded-lg border border-default bg-surface text-secondary hover-text-accent transition-colors text-sm"
-                                aria-label="Toggle color mode"
-                            >
-                                {mode === 'light' ? 'Dark' : 'Light'}
-                            </button>
-                            <select
-                                value={accent}
-                                onChange={(e) =>
-                                    setAccent(e.target.value as 'violet' | 'indigo' | 'emerald' | 'rose')
+                                className="inline-flex items-center justify-center text-secondary hover-text-accent transition-colors p-1"
+                                aria-label={
+                                    mode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'
                                 }
-                                className="px-3 py-2 rounded-lg border border-default bg-surface text-secondary text-sm"
-                                aria-label="Accent color"
+                                title={mode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
                             >
-                                <option value="violet">Violet</option>
-                                <option value="indigo">Indigo</option>
-                                <option value="emerald">Emerald</option>
-                                <option value="rose">Rose</option>
-                            </select>
+                                {mode === 'light' ? (
+                                    <Moon className="w-4 h-4" />
+                                ) : (
+                                    <Sun className="w-4 h-4" />
+                                )}
+                            </button>
+                            <div className="inline-flex items-center gap-1.5" aria-label="Accent color">
+                                {accentOptions.map((option) => (
+                                    <button
+                                        key={option.key}
+                                        type="button"
+                                        onClick={() => setAccent(option.key)}
+                                        aria-label={`Use ${option.label} accent`}
+                                        title={option.label}
+                                        className={`h-5 w-5 rounded-full ${option.swatchClass} transition-transform hover:scale-110 ${
+                                            accent === option.key
+                                                ? `ring-2 ring-offset-2 ring-offset-[var(--bg-surface)] ${option.activeRingClass}`
+                                                : 'ring-1 ring-[var(--border-color)]'
+                                        }`}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
 
