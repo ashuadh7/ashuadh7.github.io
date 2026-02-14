@@ -28,7 +28,7 @@ export function PlaygroundBooksDetail() {
 
   return (
     <main className="bg-subtle min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
         <button
           onClick={() => navigate("/playground")}
           className="flex items-center gap-2 text-accent hover-text-accent-strong mb-8 transition-colors"
@@ -37,9 +37,9 @@ export function PlaygroundBooksDetail() {
           Back to Playground
         </button>
 
-        <div className="mb-12">
+        <div className="mb-10 sm:mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <BookMarked className="w-8 h-8 text-accent" />
+            <BookMarked className="w-7 h-7 sm:w-8 sm:h-8 text-accent" />
             <h1 className="text-primary">{categoryTitle}</h1>
           </div>
           <p className="text-muted">
@@ -52,10 +52,10 @@ export function PlaygroundBooksDetail() {
           {books.map((book) => (
             <div
               key={book.id}
-              className="bg-surface rounded-lg p-6 shadow-sm border border-default hover:shadow-md transition-all flex flex-col md:flex-row gap-6"
+              className="bg-surface rounded-lg p-4 sm:p-6 shadow-sm border border-default hover:shadow-md transition-all flex flex-col md:flex-row gap-4 sm:gap-6"
             >
               {book.coverImage && (
-                <div className="flex-shrink-0 w-full md:w-32 h-48 bg-soft rounded-md overflow-hidden shadow-sm">
+                <div className="flex-shrink-0 w-full md:w-32 h-44 sm:h-48 bg-soft rounded-md overflow-hidden shadow-sm">
                   <img
                     src={book.coverImage}
                     alt={`Cover of ${book.title}`}
@@ -64,7 +64,7 @@ export function PlaygroundBooksDetail() {
                 </div>
               )}
               <div className="flex-1">
-                <h3 className="mb-2 text-xl font-medium text-primary">
+                <h3 className="mb-2 text-lg sm:text-xl font-medium text-primary">
                   {book.title}
                 </h3>
                 <p className="text-muted mb-4">

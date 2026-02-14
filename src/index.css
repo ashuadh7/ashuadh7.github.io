@@ -144,5 +144,14 @@
   .group:hover .group-hover-text-accent {
     color: var(--accent);
   }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 

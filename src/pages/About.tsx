@@ -4,14 +4,14 @@ import { Footer } from "@/components/Footer";
 export function About() {
   return (
     <main className="bg-subtle min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="bg-surface rounded-lg shadow-sm p-8 md:p-12">
-          <div className="grid md:grid-cols-[280px_1fr] gap-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <div className="bg-surface rounded-lg shadow-sm p-5 sm:p-8 md:p-12">
+          <div className="grid md:grid-cols-[280px_1fr] gap-8 sm:gap-12">
             <div className="flex justify-center md:justify-start">
               <img
                 src="/about.jpeg"
                 alt="Ashu Adhikari"
-                className="w-64 h-64 object-cover rounded-lg"
+                className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg"
               />
             </div>
 
@@ -103,7 +103,7 @@ export function About() {
                     href="mailto:ashuadh7@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-accent hover-text-accent-strong transition-colors"
+                    className="inline-flex items-center gap-2 text-accent hover-text-accent-strong transition-colors break-all"
                   >
                     <Mail className="w-5 h-5" />
                     ashuadh7@gmail.com

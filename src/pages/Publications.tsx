@@ -32,12 +32,12 @@ export function Publications() {
 
   return (
     <main className="bg-app min-h-screen">
-      <div className="max-w-5xl mx-auto px-8 py-16">
-        <h1 className="text-3xl font-bold text-primary mb-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-10 sm:mb-12">
           Publications & Presentations
         </h1>
 
-        <div className="space-y-12">
+        <div className="space-y-10 sm:space-y-12">
           {categories.map((category) => {
             const categoryPubs = publicationsData.filter(
               (pub) => pub.category === category,
@@ -47,14 +47,14 @@ export function Publications() {
 
             return (
               <section key={category}>
-                <h2 className="text-xl font-bold text-accent mb-6">
+                <h2 className="text-lg sm:text-xl font-bold text-accent mb-5 sm:mb-6">
                   {category}
                 </h2>
                 <div className="flex flex-col">
                   {categoryPubs.map((pub) => (
                     <div
                       key={pub.id}
-                      className="pl-5 border-l-4 border-default border-solid mb-10 last:mb-0"
+                      className="pl-4 sm:pl-5 border-l-4 border-default border-solid mb-8 sm:mb-10 last:mb-0"
                     >
                       <h3
                         className="text-lg font-bold text-primary mb-1 leading-tight"

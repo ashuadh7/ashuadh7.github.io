@@ -15,7 +15,7 @@ export function ProjectDetail() {
 
   if (!project) {
     return (
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
         <div className="text-center">
           <h2 className="mb-4 text-primary">Project Not Found</h2>
           <Link to="/" className="text-accent hover-text-accent-strong">
@@ -27,17 +27,17 @@ export function ProjectDetail() {
   }
 
   return (
-    <main className="max-w-5xl mx-auto px-6 py-12">
+    <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
       <Link
         to="/"
-        className="inline-flex items-center gap-2 text-muted hover-text-accent mb-8 transition-colors"
+        className="inline-flex items-center gap-2 text-muted hover-text-accent mb-6 sm:mb-8 transition-colors"
       >
         <ArrowLeft className="w-4 h-4" />
         Back to Projects
       </Link>
 
       <div className="mb-8">
-        <div className="flex items-center gap-4 mb-4">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4">
           <span className="flex items-center gap-2 text-sm text-muted">
             <Calendar className="w-4 h-4" />
             {project.year}
@@ -54,10 +54,10 @@ export function ProjectDetail() {
           </div>
         </div>
         <h1 className="mb-4 text-primary">{project.title}</h1>
-        <p className="text-xl text-muted">{project.shortDescription}</p>
+        <p className="text-lg sm:text-xl text-muted">{project.shortDescription}</p>
       </div>
 
-      <div className="aspect-video rounded-lg overflow-hidden mb-12 bg-soft">
+      <div className="aspect-video rounded-lg overflow-hidden mb-10 sm:mb-12 bg-soft">
         <img
           src={project.image}
           alt={project.title}
@@ -65,7 +65,7 @@ export function ProjectDetail() {
         />
       </div>
 
-      <div className="space-y-12">
+      <div className="space-y-10 sm:space-y-12">
         <section>
           <h2 className="mb-4 text-primary">Overview</h2>
           <p className="text-secondary leading-relaxed">{project.fullDescription}</p>
