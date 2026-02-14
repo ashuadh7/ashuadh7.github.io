@@ -10,7 +10,7 @@ import { PlaygroundBooksDetail } from "./pages/PlayGround/PlaygroundBooksDetail"
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-app">
         <Navigation />
         <Routes>
           <Route path="/" element={<ProjectsHome />} />
