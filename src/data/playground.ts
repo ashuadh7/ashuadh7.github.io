@@ -42,7 +42,7 @@ export const selectedWorksData: SelectedWorks[] = [
     },
     {
         id: 'chartx-gui',
-        title: 'ChartX – Sensor Data Visualization Tool',
+        title: 'ChartX - Sensor Data Visualization Tool',
         description: 'A cross-platform GUI application for visualizing and analyzing real-time sensor data from custom hardware.',
         status: 'Released',
         externalLink: 'https://infusionsystems.com/catalog/product_info.php/products_id/687',
@@ -86,7 +86,7 @@ export const booksData: Book[] = [
         authors: ['Abhijit V. Banerjee', 'Esther Duflo'],
         category: 'completed',
         coverImage: './books/poor-economics/cover.jpg',
-        notes: 'Reshaped my understanding of poverty and development economics. I mean, they won a freaking Nobel Prize for it! But very accessible. And reletable to someone coming from a developing country.'
+        notes: 'Reshaped my understanding of poverty and development economics. I mean, they won a freaking Nobel Prize for it! But very accessible. And relatable to someone coming from a developing country.'
     },
     {
         id: 'freedom-is-a-constant-struggle',
@@ -162,3 +162,4 @@ export const booksData: Book[] = [
 export const getBookCount = (category: 'completed' | 'reading' | 'wishlist'): number => {
   return booksData.filter(book => book.category === category).length;
 };
+
