@@ -16,7 +16,7 @@ export const publicationsData: Publication[] = [
     authors: 'Hashemian, A.M., **Adhikari, A.**, Aguilar, I.A., Kruij, E., von der Heyde, M., & Riecke, B.E.',
     venue: 'IEEE Transactions on Visualization and Computer Graphics, 30(8), 4665-4682 (2024).',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1109/TVCG.2023.3275111',
     category: 'Peer-Reviewed Journals'
   },
   {
@@ -25,7 +25,7 @@ export const publicationsData: Publication[] = [
     authors: '**Adhikari, A.**, Zielasko, D., Aguilar, I., Bretin, A., Kruij, E., von der Heyde, M., & Riecke, B.E.',
     venue: 'IEEE Transactions on Visualization and Computer Graphics, 29(12), 5265-5281 (2022).',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://ieeexplore.ieee.org/abstract/document/9894041/',
     category: 'Peer-Reviewed Journals'
   },
   {
@@ -34,7 +34,7 @@ export const publicationsData: Publication[] = [
     authors: '**Adhikari, A.**, Hashemian, A.M., Nguyen-Vo, T., Kruij, E., von der Heyde, M., & Riecke, B.E.',
     venue: 'Frontiers in Virtual Reality, 2, 730334 (2021).',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://www.frontiersin.org/articles/10.3389/frvir.2021.730334/full',
     category: 'Peer-Reviewed Journals'
   },
   {
@@ -43,7 +43,7 @@ export const publicationsData: Publication[] = [
     authors: 'Hashemian, A.M., **Adhikari, A.**, Kruij, E., von der Heyde, M., & Riecke, B.E.',
     venue: 'IEEE Transactions on Visualization and Computer Graphics, 29(3), 1748-1768 (2021).',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1109/TVCG.2021.3131422',
     category: 'Peer-Reviewed Journals'
   },
   {
@@ -52,7 +52,7 @@ export const publicationsData: Publication[] = [
     authors: 'Hashemian, A.M., Lotfaliei, M., **Adhikari, A.**, Kruij, E., & Riecke, B.E.',
     venue: 'IEEE Transactions on Visualization and Computer Graphics, 28(4), 1792-1809 (2020).',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1109/TVCG.2020.3025084',
     category: 'Peer-Reviewed Journals'
   },
 
@@ -63,7 +63,7 @@ export const publicationsData: Publication[] = [
     authors: 'Kitson, A., Antle, A.N., Kenny, S., **Adhikari, A.**, Karthik, K., Cimensel, A., & Chan, M.',
     venue: 'Proceedings of CHI 2024, ACM, Article 691, 1-18.',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1145/3613904.3642723',
     category: 'Other Peer-Reviewed Publications'
   },
   {
@@ -72,7 +72,7 @@ export const publicationsData: Publication[] = [
     authors: 'Miller, N., Stepanova, E.R., Desnoyers-Stewart, J., **Adhikari, A.**, Kitson, A., et al.',
     venue: 'Proceedings of the 2023 ACM Designing Interactive Systems Conference, 189-211.',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1145/3563657.3595998',
     category: 'Other Peer-Reviewed Publications'
   },
   {
@@ -81,7 +81,7 @@ export const publicationsData: Publication[] = [
     authors: 'Jones, B., Maiero, J., Mogharrab, A., Aguilar, I.A., **Adhikari, A.**, Riecke, B.E., Kruij, E., Neustaedter, C., & Lindeman, R.W.',
     venue: 'Proceedings of ICMI 2020, 194-203.',
     linkText: 'View Publication',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1145/3382507.3418820',
     category: 'Other Peer-Reviewed Publications'
   },
 
@@ -92,7 +92,7 @@ export const publicationsData: Publication[] = [
     authors: 'Miller, N., Desnoyers-Stewart, J., Stepanova, E. R., **Adhikari, A.**, Riecke, B. E., Pennefather, P. P., Kitson, A., & Quesnel, D.',
     venue: 'Cosmic Nights: Humans in Space, H.R. MacMillan Space Centre, November 23, 2023.',
     linkText: 'More Details',
-    linkUrl: '#',
+    linkUrl: 'https://events.sfu.ca/event/37966-cosmic-nights-humans-in-space',
     category: 'Exhibitions, Presentations, and Posters'
   },
   {
@@ -101,7 +101,7 @@ export const publicationsData: Publication[] = [
     authors: 'Riecke, B. E., Clement, D., **Adhikari, A.**, Quesnel, D., Zielasko, D., & von der Heyde, M.',
     venue: '',
     linkText: 'View Abstract',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1145/3532834.3536211',
     category: 'Exhibitions, Presentations, and Posters'
   },
   {
@@ -110,7 +110,7 @@ export const publicationsData: Publication[] = [
     authors: '**Adhikari, A.**, Riecke, B.E., Hashemian, A.M., Nguyen-Vo, T., Kruij, E., & von der Heyde, M.',
     venue: 'Talk presented at ICSC 2021, Rome, Italy.',
     linkText: 'Watch Presentation',
-    linkUrl: '#',
+    linkUrl: 'https://www.youtube.com/watch?v=FbmE4SEISWU',
     category: 'Exhibitions, Presentations, and Posters'
   },
   {
@@ -119,7 +119,7 @@ export const publicationsData: Publication[] = [
     authors: 'Riecke, B.E., **Adhikari, A.**, Zielasko, D., Bretin, A., von der Heyde, M., and Kruij, E.',
     venue: 'Talk presented at ICSC 2021, Rome, Italy.',
     linkText: 'Watch Presentation',
-    linkUrl: '#',
+    linkUrl: 'https://www.youtube.com/watch?v=hRqkqup40bI',
     category: 'Exhibitions, Presentations, and Posters'
   },
   {
@@ -128,7 +128,7 @@ export const publicationsData: Publication[] = [
     authors: '**Adhikari, A.**, Zielasko, D., Bretin, A., von der Heyde, M., Kruij, E., & Riecke, B.E.',
     venue: 'IEEE VR 2021 Workshop, 370-372.',
     linkText: 'View Abstract',
-    linkUrl: '#',
+    linkUrl: 'https://doi.org/10.1109/VRW52623.2021.00074',
     category: 'Exhibitions, Presentations, and Posters'
   },
   {
@@ -137,7 +137,7 @@ export const publicationsData: Publication[] = [
     authors: 'Riecke, B.E., Hashemian, A.M., **Adhikari, A.**, Aguilar, I., Kruijff, E., & von der Heyde, M.',
     venue: 'ICSC 2021: 8th International Conference on Spatial Cognition, Rome, Italy.',
     linkText: 'Watch Presentation',
-    linkUrl: '#',
+    linkUrl: 'https://www.youtube.com/watch?v=jzoaBAd6gPY',
     category: 'Exhibitions, Presentations, and Posters'
   },
   {
@@ -146,7 +146,7 @@ export const publicationsData: Publication[] = [
     authors: 'Miller, N., Desnoyers-Stewart, J., Stepanova, E. R., **Adhikari, A.**, Riecke, B. E., Pennefather, P. P., Kitson, A., & Quesnel, D.',
     venue: 'V-Unframed 2021, Vancouver, Canada.',
     linkText: 'More Details',
-    linkUrl: '#',
+    linkUrl: 'https://www.alliancefrancaise.ca/v-unframed/en/the-artworks-2021/sirius/',
     category: 'Exhibitions, Presentations, and Posters'
   }
 ];

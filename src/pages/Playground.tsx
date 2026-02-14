@@ -12,11 +12,11 @@ const books: Array<{
   route: string;
 }> = [
   {
-    title: "Recently Read",
-    description: "Books I have finished and my thoughts on them.",
+    title: "Selected Favourites",
+    description: "Books that had lasting impact on me.",
     icon: BookMarked,
     type: "completed",
-    route: "recently-read",
+    route: "favourites",
   },
   {
     title: "Currently Reading",
