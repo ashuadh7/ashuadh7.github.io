@@ -45,8 +45,8 @@ export function Playground() {
 
   return (
     <main className="bg-subtle min-h-screen">
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="mb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <div className="mb-10 sm:mb-12">
           <h1 className="mb-4 text-primary">Playground</h1>
           <p className="text-muted">
             A collection of my selected projects, books, games, and other
@@ -55,7 +55,7 @@ export function Playground() {
         </div>
 
         {/* Selected Projects Section */}
-        <section className="mb-16">
+        <section className="mb-12 sm:mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Code2 className="w-6 h-6 text-accent" />
             <h2 className="text-primary">Selected Projects</h2>
@@ -64,19 +64,19 @@ export function Playground() {
             {selectedWorksData.map((project) => (
               <div
                 key={project.id}
-                className="block bg-surface rounded-lg p-6 shadow-sm hover:shadow-md transition-all border border-default group"
+                className="block bg-surface rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-all border border-default group"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex items-start gap-4 flex-1">
-                    <div className="w-12 h-12 bg-accent-soft rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Code2 className="w-6 h-6 text-accent" />
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                  <div className="flex items-start gap-3 sm:gap-4 flex-1">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent-soft rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Code2 className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
                     </div>
                     <div className="flex-1">
                       <h3 className="mb-2 text-primary">{project.title}</h3>
                       <p className="text-muted">{project.description}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 self-start sm:self-auto">
                     <span className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm">
                       {project.status}
                     </span>
@@ -103,7 +103,7 @@ export function Playground() {
           </div>
         </section>
         {/* Books Section */}
-        <section className="mb-16">
+        <section className="mb-12 sm:mb-16">
           <div className="flex items-center gap-3 mb-6">
             <BookMarked className="w-6 h-6 text-accent" />
             <h2 className="text-primary">Books</h2>
@@ -113,12 +113,12 @@ export function Playground() {
               <div
                 key={index}
                 onClick={() => navigate(`/playground/books/${book.route}`)}
-                className="block bg-surface rounded-lg p-6 shadow-sm hover:shadow-md transition-all border border-default cursor-pointer group"
+                className="block bg-surface rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-all border border-default cursor-pointer group"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex items-start gap-4 flex-1">
-                    <div className="w-12 h-12 bg-accent-soft rounded-lg flex items-center justify-center flex-shrink-0">
-                      <book.icon className="w-6 h-6 text-accent" />
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                  <div className="flex items-start gap-3 sm:gap-4 flex-1">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent-soft rounded-lg flex items-center justify-center flex-shrink-0">
+                      <book.icon className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
                     </div>
                     <div className="flex-1">
                       <h3 className="mb-2 text-primary group-hover-text-accent transition-colors">
@@ -127,7 +127,7 @@ export function Playground() {
                       <p className="text-muted">{book.description}</p>
                     </div>
                   </div>
-                  <div className="px-4 py-2 bg-soft text-secondary rounded-lg">
+                  <div className="px-4 py-2 bg-soft text-secondary rounded-lg self-start sm:self-auto">
                     {getBookCount(book.type)} books
                   </div>
                 </div>
