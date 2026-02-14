@@ -17,7 +17,7 @@ export function Publications() {
             return (
               <strong
                 key={index}
-                className="font-bold text-black"
+                className="font-bold text-primary"
                 style={{ fontWeight: 700 }}
               >
                 {part}
@@ -31,9 +31,9 @@ export function Publications() {
   };
 
   return (
-    <main className="bg-white min-h-screen">
+    <main className="bg-app min-h-screen">
       <div className="max-w-5xl mx-auto px-8 py-16">
-        <h1 className="text-3xl font-bold text-gray-900 mb-12">
+        <h1 className="text-3xl font-bold text-primary mb-12">
           Publications & Presentations
         </h1>
 
@@ -47,26 +47,26 @@ export function Publications() {
 
             return (
               <section key={category}>
-                <h2 className="text-xl font-bold text-purple-600 mb-6">
+                <h2 className="text-xl font-bold text-accent mb-6">
                   {category}
                 </h2>
                 <div className="flex flex-col">
                   {categoryPubs.map((pub) => (
                     <div
                       key={pub.id}
-                      className="pl-5 border-l-4 border-gray-300 border-solid mb-10 last:mb-0"
+                      className="pl-5 border-l-4 border-default border-solid mb-10 last:mb-0"
                     >
                       <h3
-                        className="text-lg font-bold text-gray-900 mb-1 leading-tight"
+                        className="text-lg font-bold text-primary mb-1 leading-tight"
                         style={{ fontWeight: 700 }}
                       >
                         {pub.title}
                       </h3>
-                      <p className="text-sm text-gray-700 mb-1">
+                      <p className="text-sm text-secondary mb-1">
                         {renderAuthors(pub.authors)}
                       </p>
                       {pub.venue && (
-                        <p className="text-sm text-gray-500 italic mb-2">
+                        <p className="text-sm text-muted italic mb-2">
                           {pub.venue}
                         </p>
                       )}
@@ -74,7 +74,7 @@ export function Publications() {
                         href={pub.linkUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm font-medium text-purple-600 hover:text-purple-800 transition-colors inline-block"
+                        className="text-sm font-medium text-accent hover-text-accent-strong transition-colors inline-block"
                       >
                         {pub.linkText}
                       </a>
@@ -87,7 +87,7 @@ export function Publications() {
         </div>
       </div>
 
-      <footer className="py-12 text-center text-gray-500 text-sm mt-12">
+      <footer className="py-12 text-center text-muted text-sm mt-12">
         <p>&copy; 2026 Ashu Adhikari. All rights reserved.</p>
       </footer>
     </main>
