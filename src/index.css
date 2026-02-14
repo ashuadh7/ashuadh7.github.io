@@ -13,6 +13,7 @@
   --text-muted: #64748b;
 
   --border-color: #e2e8f0;
+  --publication-rail-color: #94a3b8;
 
   --accent: #7c3aed;
   --accent-hover: #6d28d9;
@@ -32,6 +33,7 @@
   --text-muted: #94a3b8;
 
   --border-color: #334155;
+  --publication-rail-color: #475569;
 }
 
 :root[data-accent="violet"] {
@@ -119,6 +121,10 @@
 
   .border-default {
     border-color: var(--border-color);
+  }
+
+  .border-publication {
+    border-color: var(--publication-rail-color);
   }
 
   .border-accent-soft {
