@@ -17,7 +17,7 @@ export function PlaygroundBooksDetail() {
   const books = booksData.filter(book => book.category === categoryKey);
 
   const categoryTitles = {
-    'recently-read': 'Recently Read',
+    'recently-read': 'Some of my Favourites',
     'currently-reading': 'Currently Reading',
     'wishlist': 'Wishlist'
   };
@@ -38,7 +38,7 @@ export function PlaygroundBooksDetail() {
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <BookMarked className="w-8 h-8 text-violet-600" />
-            <h1 className="text-gray-900">{categoryTitle}</h1>
+            <h1 className="text-gray-1100">{categoryTitle}</h1>
           </div>
           <p className="text-gray-600">
             {books.length} {books.length === 1 ? 'book' : 'books'} in this collection
