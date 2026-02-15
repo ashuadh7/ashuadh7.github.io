@@ -59,7 +59,7 @@ export function ProjectPageLayout({
           Back to Projects
         </Link>
 
-        <article className="bg-surface rounded-lg shadow-sm p-5 sm:p-8 md:p-10">
+        <article className="bg-surface rounded-lg shadow-sm p-5 sm:p-8 md:p-10 [&_h2]:text-lg [&_h2]:sm:text-xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h3]:text-base [&_h3]:sm:text-lg [&_h3]:font-semibold">
           <header className="mb-8 sm:mb-10">
             <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4">
               <span className="inline-flex items-center gap-2 text-sm text-muted">
@@ -77,7 +77,9 @@ export function ProjectPageLayout({
                 ))}
               </div>
             </div>
-            <h1 className="mb-3 text-primary">{title}</h1>
+            <h1 className="mb-3 text-2xl sm:text-3xl font-semibold tracking-tight text-primary">
+              {title}
+            </h1>
             <p className="text-lg sm:text-xl text-muted">{subtitle}</p>
           </header>
 
