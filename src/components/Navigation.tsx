@@ -34,7 +34,14 @@ export function Navigation() {
     ];
 
     const isActive = (path: string) => {
-        if (path === '/' && location.pathname === '/') return true;
+        if (
+            path === '/' &&
+            (location.pathname === '/' ||
+                location.pathname.startsWith('/projects') ||
+                location.pathname.startsWith('/project/'))
+        ) {
+            return true;
+        }
         if (path !== '/' && location.pathname.startsWith(path)) return true;
         return false;
     };
