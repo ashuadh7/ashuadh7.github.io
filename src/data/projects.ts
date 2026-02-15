@@ -1,5 +1,6 @@
 export interface Project {
   id: string;
+  path: string;
   title: string;
   shortDescription: string;
   image: string;
@@ -15,6 +16,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'exploring-endless-worlds-vr',
+    path: '/projects/exploring-endless-worlds',
     title: 'Exploring Endless Worlds in VR',
     shortDescription: 'An immersive VR experience that generates infinite procedural worlds for exploration and discovery.',
     image: './projects/exploring-endless-worlds/thumbnail.jpg',
@@ -38,6 +40,7 @@ export const projects: Project[] = [
   },
   {
     id: 'vr-beyond-ordinary',
+    path: '/projects/vr-beyond-ordinary',
     title: 'VR Beyond the Ordinary',
     shortDescription: 'Pushing the boundaries of what\'s possible in VR through experimental interaction techniques.',
     image: './projects/vr-beyond-ordinary/thumbnail.jpg',
@@ -61,6 +64,7 @@ export const projects: Project[] = [
   },
   {
     id: 'vr-chronic-pain',
+    path: '/projects/vr-chronic-pain',
     title: 'VR vs Chronic Pain',
     shortDescription: 'Using virtual reality as a therapeutic tool for managing chronic pain through immersive distraction therapy.',
     image: './projects/vr-chronic-pain/thumbnail.jpg',
@@ -84,6 +88,7 @@ export const projects: Project[] = [
   },
   {
     id: 'feel-beat-vr',
+    path: '/projects/feel-the-beat',
     title: 'Feel the Beat in VR',
     shortDescription: 'A rhythm-based VR experience that combines music visualization with full-body interaction.',
     image: './projects/feel-the-beat/thumbnail.jpg',
@@ -107,6 +112,7 @@ export const projects: Project[] = [
   },
   {
     id: 'master-emotions-vr',
+    path: '/projects/master-your-emotions',
     title: 'Master Your Emotions in VR',
     shortDescription: 'A VR application for emotional regulation training using biofeedback and guided scenarios.',
     image: './projects/master-your-emotions/thumbnail.jpg',
@@ -130,6 +136,7 @@ export const projects: Project[] = [
   },
   {
     id: 'project-playground',
+    path: '/projects/project-playground',
     title: 'Project Playground',
     shortDescription: 'An experimental sandbox for prototyping and testing new HCI concepts rapidly.',
     image: './projects/project-playground/thumbnail.jpg',
@@ -156,3 +163,7 @@ export const projects: Project[] = [
 export function getProjectById(id: string): Project | undefined {
   return projects.find(p => p.id === id);
 }
+
+export const projectPathById: Record<string, string> = Object.fromEntries(
+  projects.map((project) => [project.id, project.path]),
+);

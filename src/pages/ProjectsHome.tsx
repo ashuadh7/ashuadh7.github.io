@@ -15,7 +15,7 @@ export function ProjectsHome() {
         {projects.map((project) => (
           <Link
             key={project.id}
-            to={`/project/${project.id}`}
+            to={project.path}
             className="group bg-surface rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all border border-default"
           >
             <div className="aspect-video overflow-hidden bg-soft">
