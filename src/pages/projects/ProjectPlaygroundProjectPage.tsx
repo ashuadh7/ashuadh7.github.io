@@ -1,7 +1,10 @@
 import { ProjectPageLayout } from "@/components/projects/ProjectPageLayout";
+import { getProjectTalksAndResources } from "@/data/projectResources";
 import { getProjectById } from "@/data/projects";
 
-const project = getProjectById("project-playground");
+const projectId = "project-playground";
+const project = getProjectById(projectId);
+const talksAndResources = getProjectTalksAndResources(projectId);
 
 export function ProjectPlaygroundProjectPage() {
   if (!project) return null;
@@ -13,13 +16,7 @@ export function ProjectPlaygroundProjectPage() {
       year={project.year}
       tags={project.tags}
       heroImage={project.image}
-      talks={[
-        {
-          title:
-            "Simultaneous Locomotion and Interaction in VR: Walking > Leaning > Controller",
-          url: "https://www.youtube.com/watch?v=jzoaBAd6gPY",
-        },
-      ]}
+      talks={talksAndResources}
       emptyPublicationsText="This project acts as an incubator. Publications are usually linked from the downstream projects that emerge from this space."
     >
       <section className="space-y-4">

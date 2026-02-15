@@ -1,7 +1,12 @@
 import { ProjectPageLayout } from "@/components/projects/ProjectPageLayout";
+import { getProjectPublications } from "@/data/publications";
+import { getProjectTalksAndResources } from "@/data/projectResources";
 import { getProjectById } from "@/data/projects";
 
-const project = getProjectById("vr-beyond-ordinary");
+const projectId = "vr-beyond-ordinary";
+const project = getProjectById(projectId);
+const relatedPublications = getProjectPublications(projectId);
+const talksAndResources = getProjectTalksAndResources(projectId);
 
 export function VrBeyondOrdinaryProjectPage() {
   if (!project) return null;
@@ -21,23 +26,8 @@ export function VrBeyondOrdinaryProjectPage() {
             "A talk and demo exploring hybrid locomotion for richer VR interaction experiences.",
         },
       ]}
-      talks={[
-        {
-          title:
-            "HyperJumping in Virtual Vancouver: Combating Motion Sickness",
-          url: "https://doi.org/10.1145/3532834.3536211",
-        },
-      ]}
-      publications={[
-        {
-          title:
-            "Integrating continuous and teleporting VR locomotion into a seamless 'hyperjump' paradigm.",
-          authors:
-            "Adhikari, A., Zielasko, D., Aguilar, I., Bretin, A., Kruij, E., von der Heyde, M., & Riecke, B.E.",
-          venue: "IEEE TVCG, 29(12), 5265-5281 (2022).",
-          link: "https://ieeexplore.ieee.org/abstract/document/9894041/",
-        },
-      ]}
+      talks={talksAndResources}
+      publications={relatedPublications}
     >
       <section className="space-y-4">
         <h2 className="text-primary">Design Intent</h2>

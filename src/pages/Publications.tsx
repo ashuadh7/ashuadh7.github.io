@@ -1,12 +1,11 @@
-import { publicationsData } from "../data/publications";
+import {
+  getPublicationsByCategory,
+  publicationCategories,
+} from "../data/publications";
 import { Footer } from "@/components/Footer";
 
 export function Publications() {
-  const categories = [
-    "Peer-Reviewed Journals",
-    "Other Peer-Reviewed Publications",
-    "Exhibitions, Presentations, and Posters",
-  ] as const;
+  const publicationsByCategory = getPublicationsByCategory(true);
 
   const renderAuthors = (authors: string) => {
     const parts = authors.split("**");
@@ -35,10 +34,8 @@ export function Publications() {
         </h1>
 
         <div className="space-y-10 sm:space-y-12">
-          {categories.map((category) => {
-            const categoryPubs = publicationsData.filter(
-              (pub) => pub.category === category,
-            );
+          {publicationCategories.map((category) => {
+            const categoryPubs = publicationsByCategory[category];
 
             if (categoryPubs.length === 0) return null;
 
