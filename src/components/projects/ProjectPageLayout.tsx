@@ -12,6 +12,8 @@ export interface ProjectVideoEmbed {
 export interface ProjectLinkResource {
   title: string;
   url: string;
+  details?: string;
+  linkText?: string;
 }
 
 export interface ProjectPublication {
@@ -19,6 +21,7 @@ export interface ProjectPublication {
   authors?: string;
   venue?: string;
   link?: string;
+  linkText?: string;
 }
 
 interface ProjectPageLayoutProps {
@@ -59,7 +62,7 @@ export function ProjectPageLayout({
           Back to Projects
         </Link>
 
-        <article className="bg-surface rounded-lg shadow-sm p-5 sm:p-8 md:p-10">
+        <article className="bg-surface rounded-lg shadow-sm p-5 sm:p-8 md:p-10 [&_h2]:text-lg [&_h2]:sm:text-xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h3]:text-base [&_h3]:sm:text-lg [&_h3]:font-semibold">
           <header className="mb-8 sm:mb-10">
             <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4">
               <span className="inline-flex items-center gap-2 text-sm text-muted">
@@ -77,7 +80,9 @@ export function ProjectPageLayout({
                 ))}
               </div>
             </div>
-            <h1 className="mb-3 text-primary">{title}</h1>
+            <h1 className="mb-3 text-2xl sm:text-3xl font-semibold tracking-tight text-primary">
+              {title}
+            </h1>
             <p className="text-lg sm:text-xl text-muted">{subtitle}</p>
           </header>
 
@@ -125,14 +130,23 @@ export function ProjectPageLayout({
               <h2 className="mb-4 text-primary">Talks & Online Resources</h2>
               <ul className="space-y-3">
                 {talks.map((talk) => (
-                  <li key={talk.url}>
+                  <li
+                    key={talk.url}
+                    className="rounded-lg border border-default bg-soft p-4"
+                  >
+                    <h3 className="text-primary font-semibold mb-1">
+                      {talk.title}
+                    </h3>
+                    {talk.details && (
+                      <p className="text-muted text-sm mb-2">{talk.details}</p>
+                    )}
                     <a
                       href={talk.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-accent hover-text-accent-strong transition-colors"
                     >
-                      {talk.title}
+                      {talk.linkText ?? "Open Resource"}
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </li>
@@ -166,7 +180,7 @@ export function ProjectPageLayout({
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-accent hover-text-accent-strong transition-colors mt-2"
                       >
-                        View Publication
+                        {publication.linkText ?? "View Publication"}
                         <ExternalLink className="w-4 h-4" />
                       </a>
                     )}
