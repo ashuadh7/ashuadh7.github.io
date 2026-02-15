@@ -17,26 +17,26 @@ export const projects: Project[] = [
   {
     id: 'exploring-endless-worlds-vr',
     path: '/projects/exploring-endless-worlds',
-    title: 'Exploring Endless Worlds in VR',
-    shortDescription: 'An immersive VR experience that generates infinite procedural worlds for exploration and discovery.',
+    title: 'Embodied VR Locomotion Research',
+    shortDescription: 'Research from 2018-2024 on leaning-based locomotion and HyperJump to make VR navigation more intuitive, comfortable, and spatially clear.',
     image: '/projects/exploring-endless-worlds/thumbnail.jpg',
-    tags: ['VR', 'Procedural Generation', 'Unity'],
-    year: '2024',
-    fullDescription: 'This project explores how procedural generation can create infinite, unique virtual environments that users can explore in VR. The system generates diverse landscapes, ecosystems, and points of interest on-the-fly, creating a sense of endless discovery.',
-    objective: 'To investigate how procedural content generation affects user engagement and sense of presence in virtual reality environments.',
+    tags: ['VR Locomotion', 'Embodied Interaction', 'HyperJump', 'Cybersickness'],
+    year: '2018-2024',
+    fullDescription: 'This project investigates two locomotion ideas: leaning-based embodied interaction and HyperJump, a hybrid locomotion technique that combines continuous movement with periodic jumps.',
+    objective: 'To improve VR locomotion usability, reduce cybersickness, and support stronger spatial updating/orientation, especially for novice users.',
     methodology: [
-      'Developed a procedural generation algorithm for creating diverse terrains and biomes',
-      'Implemented VR locomotion techniques optimized for long-distance exploration',
-      'Conducted user studies with 30 participants to measure engagement and presence',
-      'Analyzed qualitative feedback on the exploration experience'
+      'Designed leaning-based interfaces that use upper-body movement for navigation',
+      'Compared leaning-based and controller-based locomotion in controlled studies',
+      'Evaluated usability, ease of use, precision, workload, cybersickness, and spatial updating',
+      'Developed and tested HyperJump as a hybrid continuous/discrete locomotion approach'
     ],
     results: [
-      'Users reported 40% higher engagement compared to pre-designed environments',
-      'Presence scores increased significantly with procedural variety',
-      'Participants explored an average of 2.5x more area than in control conditions',
-      'Positive feedback on the sense of discovery and surprise'
+      'Leaning-based interaction improved usability and engagement for many users',
+      'Embodied controls supported better comfort and orientation for novice participants',
+      'HyperJump enabled faster travel while preserving route following and spatial knowledge',
+      'The work produced multiple journal papers, talks, and workshop outputs'
     ],
-    technologies: ['Unity', 'C#', 'SteamVR', 'Perlin Noise', 'Meta Quest 2']
+    technologies: ['Unity', 'C#', 'SteamVR', 'User Studies', 'Embodied Interaction Design']
   },
   {
     id: 'vr-beyond-ordinary',
