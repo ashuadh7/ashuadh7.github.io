@@ -17,8 +17,8 @@ export const projects: Project[] = [
   {
     id: 'exploring-endless-worlds-vr',
     path: '/projects/exploring-endless-worlds',
-    title: 'Embodied VR Locomotion Research',
-    shortDescription: 'Research from 2018-2024 on leaning-based locomotion and HyperJump to make VR navigation more intuitive, comfortable, and spatially clear.',
+    title: 'Exploring Endless Worlds in VR',
+    shortDescription: 'Embodied VR locomotion research (2018-2024): Leaning-based Interaction and HyperJump.',
     image: '/projects/exploring-endless-worlds/thumbnail.jpg',
     tags: ['VR Locomotion', 'Embodied Interaction', 'HyperJump', 'Cybersickness'],
     year: '2018-2024',
