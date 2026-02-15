@@ -1,7 +1,10 @@
 import { ProjectPageLayout } from "@/components/projects/ProjectPageLayout";
+import { getProjectPublications } from "@/data/publications";
 import { getProjectById } from "@/data/projects";
 
-const project = getProjectById("master-emotions-vr");
+const projectId = "master-emotions-vr";
+const project = getProjectById(projectId);
+const relatedPublications = getProjectPublications(projectId);
 
 export function MasterYourEmotionsProjectPage() {
   if (!project) return null;
@@ -13,25 +16,7 @@ export function MasterYourEmotionsProjectPage() {
       year={project.year}
       tags={project.tags}
       heroImage={project.image}
-      publications={[
-        {
-          title:
-            "'I Call Upon a Friend': Virtual Reality-Based Supports for Cognitive Reappraisal Identified through Co-designing with Adolescents.",
-          authors:
-            "Kitson, A., Antle, A.N., Kenny, S., Adhikari, A., Karthik, K., Cimensel, A., & Chan, M.",
-          venue: "Proceedings of CHI 2024, ACM, Article 691, 1-18.",
-          link: "https://doi.org/10.1145/3613904.3642723",
-        },
-        {
-          title:
-            "Awedyssey: Design tensions in eliciting self-transcendent emotions in virtual reality to support mental well-being and connection.",
-          authors:
-            "Miller, N., Stepanova, E.R., Desnoyers-Stewart, J., Adhikari, A., Kitson, A., et al.",
-          venue:
-            "Proceedings of the 2023 ACM Designing Interactive Systems Conference, 189-211.",
-          link: "https://doi.org/10.1145/3563657.3595998",
-        },
-      ]}
+      publications={relatedPublications}
     >
       <section className="space-y-4">
         <h2 className="text-primary">Research Direction</h2>

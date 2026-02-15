@@ -1,9 +1,14 @@
 import { ProjectPageLayout } from "@/components/projects/ProjectPageLayout";
+import { getProjectPublications } from "@/data/publications";
+import { getProjectTalksAndResources } from "@/data/projectResources";
 import { getProjectById } from "@/data/projects";
 
-const project = getProjectById("exploring-endless-worlds-vr");
+const projectId = "exploring-endless-worlds-vr";
+const project = getProjectById(projectId);
 const hyperJumpTopViewGif =
   "/projects/exploring-endless-worlds/HyperJump_TopView.gif";
+const relatedPublications = getProjectPublications(projectId);
+const talksAndResources = getProjectTalksAndResources(projectId);
 
 export function ExploringEndlessWorldsProjectPage() {
   if (!project) return null;
@@ -34,94 +39,8 @@ export function ExploringEndlessWorldsProjectPage() {
             "Demonstration of HyperJump behavior in navigation and pointing tasks.",
         },
       ]}
-      talks={[
-        {
-          title:
-            "HyperJumping in Virtual Vancouver: Combating motion sickness by merging teleporting and continuous VR locomotion in an embodied hands-free VR flying paradigm.",
-          details:
-            "Riecke, B. E., Clement, D., Adhikari, A., Quesnel, D., Zielasko, D., & von der Heyde, M.",
-          url: "https://doi.org/10.1145/3532834.3536211",
-          linkText: "View Abstract",
-        },
-        {
-          title:
-            "Embodied VR flying improves spatial orientation while reducing cybersickness.",
-          details:
-            "Adhikari, A., Riecke, B.E., Hashemian, A.M., Nguyen-Vo, T., Kruij, E., & von der Heyde, M. Talk presented at ICSC 2021, Rome, Italy.",
-          url: "https://www.youtube.com/watch?v=FbmE4SEISWU",
-          linkText: "Watch Presentation",
-        },
-        {
-          title:
-            "HyperJump: Merging Teleporting and Continuous VR Locomotion into One Paradigm.",
-          details:
-            "Riecke, B.E., Adhikari, A., Zielasko, D., Bretin, A., von der Heyde, M., and Kruij, E. Talk presented at ICSC 2021, Rome, Italy.",
-          url: "https://www.youtube.com/watch?v=hRqkqup40bI",
-          linkText: "Watch Presentation",
-        },
-        {
-          title:
-            "Integrating Continuous and Teleporting VR Locomotion into a Seamless 'HyperJump' Paradigm.",
-          details:
-            "Adhikari, A., Zielasko, D., Bretin, A., von der Heyde, M., Kruij, E., & Riecke, B.E. IEEE VR 2021 Workshop, 370-372.",
-          url: "https://doi.org/10.1109/VRW52623.2021.00074",
-          linkText: "View Abstract",
-        },
-        {
-          title:
-            "Simultaneous Locomotion and Interaction in VR: Walking > Leaning > Controller.",
-          details:
-            "Riecke, B.E., Hashemian, A.M., Adhikari, A., Aguilar, I., Kruijff, E., & von der Heyde, M. ICSC 2021, Rome, Italy.",
-          url: "https://www.youtube.com/watch?v=jzoaBAd6gPY",
-          linkText: "Watch Presentation",
-        },
-      ]}
-      publications={[
-        {
-          title:
-            "Leaning-based interfaces improve simultaneous locomotion and object interaction in VR compared to the handheld controller.",
-          authors:
-            "Hashemian, A.M., Adhikari, A., Aguilar, I.A., Kruij, E., von der Heyde, M., & Riecke, B.E.",
-          venue:
-            "IEEE Transactions on Visualization and Computer Graphics, 30(8), 4665-4682 (2024).",
-          link: "https://doi.org/10.1109/TVCG.2023.3275111",
-        },
-        {
-          title:
-            "Integrating continuous and teleporting VR locomotion into a seamless 'hyperjump' paradigm.",
-          authors:
-            "Adhikari, A., Zielasko, D., Aguilar, I., Bretin, A., Kruij, E., von der Heyde, M., & Riecke, B.E.",
-          venue:
-            "IEEE Transactions on Visualization and Computer Graphics, 29(12), 5265-5281 (2022).",
-          link: "https://ieeexplore.ieee.org/abstract/document/9894041/",
-        },
-        {
-          title:
-            "Lean to fly: Leaning-based embodied flying can improve performance and user experience in 3D navigation.",
-          authors:
-            "Adhikari, A., Hashemian, A.M., Nguyen-Vo, T., Kruij, E., von der Heyde, M., & Riecke, B.E.",
-          venue: "Frontiers in Virtual Reality, 2, 730334 (2021).",
-          link: "https://www.frontiersin.org/articles/10.3389/frvir.2021.730334/full",
-        },
-        {
-          title:
-            "Leaning-based interfaces improve ground-based VR locomotion in reach-the-target, follow-the-path, and racing tasks.",
-          authors:
-            "Hashemian, A.M., Adhikari, A., Kruij, E., von der Heyde, M., & Riecke, B.E.",
-          venue:
-            "IEEE Transactions on Visualization and Computer Graphics, 29(3), 1748-1768 (2021).",
-          link: "https://doi.org/10.1109/TVCG.2021.3131422",
-        },
-        {
-          title:
-            "HeadJoystick: Improving flying in VR using a novel leaning-based interface.",
-          authors:
-            "Hashemian, A.M., Lotfaliei, M., Adhikari, A., Kruij, E., & Riecke, B.E.",
-          venue:
-            "IEEE Transactions on Visualization and Computer Graphics, 28(4), 1792-1809 (2020).",
-          link: "https://doi.org/10.1109/TVCG.2020.3025084",
-        },
-      ]}
+      talks={talksAndResources}
+      publications={relatedPublications}
     >
       <section className="space-y-4">
         <h2 className="text-primary">What This Research Focuses On</h2>
