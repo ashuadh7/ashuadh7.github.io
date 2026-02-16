@@ -34,7 +34,7 @@ export function PlaygroundBooksDetail() {
           className="flex items-center gap-2 text-accent hover-text-accent-strong mb-8 transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />
-          Back to Playground
+          Back to Personal Orbit
         </button>
 
         <div className="mb-10 sm:mb-12">
