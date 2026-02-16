@@ -1,6 +1,17 @@
-import { Code2, BookMarked, ExternalLink, Star } from "lucide-react";
+import {
+  Code2,
+  BookMarked,
+  ExternalLink,
+  Star,
+  Headphones,
+  Tv,
+  BookOpen,
+  Gamepad2,
+  Dices,
+  Radio,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { selectedWorksData, getBookCount } from "@/data/personalOrbit";
+import { selectedWorksData, getBookCount, audioVisualData } from "@/data/personalOrbit";
 import React from "react";
 import { Footer } from "@/components/Footer";
 
@@ -33,6 +44,14 @@ const books: Array<{
     route: "wishlist",
   },
 ];
+
+const mediaCategoryIcons = {
+  podcasts: Headphones,
+  "tv-shows": Tv,
+  manga: BookOpen,
+  "video-games": Gamepad2,
+  "board-games": Dices,
+} as const;
 
 export function PersonalOrbit() {
   const navigate = useNavigate();
@@ -133,6 +152,54 @@ export function PersonalOrbit() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Audio & Visual Section */}
+        <section className="mb-12 sm:mb-16">
+          <div className="flex items-center gap-3 mb-6">
+            <Radio className="w-6 h-6 text-accent" />
+            <h2 className="text-primary">Audio &amp; Visual</h2>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
+            {audioVisualData.map((collection) => {
+              const CollectionIcon = mediaCategoryIcons[collection.id];
+              return (
+                <div
+                  key={collection.id}
+                  className="bg-surface rounded-lg p-4 sm:p-6 shadow-sm border border-default"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-accent-soft rounded-lg flex items-center justify-center flex-shrink-0">
+                      <CollectionIcon className="w-5 h-5 text-accent" />
+                    </div>
+                    <h3 className="text-primary">{collection.title}</h3>
+                  </div>
+                  {collection.note && (
+                    <p className="text-muted text-sm mb-4">{collection.note}</p>
+                  )}
+                  <div className="space-y-4">
+                    {collection.groups.map((group) => (
+                      <div key={`${collection.id}-${group.id}`}>
+                        <p className="text-sm font-medium text-secondary mb-2">
+                          {group.label}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {group.items.map((item) => (
+                            <span
+                              key={`${collection.id}-${group.id}-${item}`}
+                              className="px-3 py-1 bg-soft text-secondary rounded-full text-sm"
+                            >
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </div>

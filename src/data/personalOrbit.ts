@@ -254,3 +254,114 @@ export const booksData: Book[] = [
 export const getBookCount = (category: 'completed' | 'reading' | 'wishlist'): number => {
   return booksData.filter(book => book.category === category).length;
 };
+
+export interface OrbitCollectionGroup {
+    id: string;
+    label: string;
+    items: string[];
+}
+
+export interface OrbitCollection {
+    id: 'podcasts' | 'tv-shows' | 'manga' | 'video-games' | 'board-games';
+    title: string;
+    note?: string;
+    groups: OrbitCollectionGroup[];
+}
+
+export const audioVisualData: OrbitCollection[] = [
+    
+    {
+        id: 'tv-shows',
+        title: 'TV Shows',
+        groups: [
+            {
+                id: 'currently-watching',
+                label: 'Currently Watching',
+                items: ['Succession', 'Curb Your Enthusiasm', 'Severance']
+            },
+            {
+                id: 'favourites',
+                label: 'Some Favourites',
+                items: [
+                    'The Wire',
+                    'Avatar: The Last Airbender',
+                    'Friends',
+                    'BoJack Horseman',
+                    'Ted Lasso',
+                    'Fleabag'
+                ]
+            },
+            
+            {
+                id: 'wishlist',
+                label: 'Wishlist',
+                items: ['Pluribus', 'Shogun', 'The White Lotus']
+            }
+        ]
+    },
+    {
+        id: 'manga',
+        title: 'Manga',
+        groups: [
+            {
+                id: 'currently-following',
+                label: 'Currently Following',
+                items: ['One Piece']
+            },
+            {
+                id: 'favourites',
+                label: 'Some Favourites',
+                items: ['Attack on Titan', 'Fullmetal Alchemist', 'Death Note', 'Naruto']
+            },
+            
+        ]
+    },
+    {
+        id: 'podcasts',
+        title: 'Podcasts',
+        groups: [
+            {
+                id: 'currently-listening',
+                label: 'Currently Listening',
+                items: ['Normal Gossip', 'What Now? with Trevor Noah', 'Men in Blazers (Liverpool rocks!!)']
+            }
+        ]
+    },
+    {
+        id: 'video-games',
+        title: 'Video Games',
+        note: 'Not a big gamer, but these are some personal favourites.',
+        groups: [
+            {
+                id: 'favourites',
+                label: 'Some Favourites',
+                items: [
+                    'Red Dead Redemption 2',
+                    'EA FC (sadly EA sucks, but Liverpool rocks!)',
+                    'The Witcher 3',
+                    'Grand Theft Auto V'
+                ]
+            }
+        ]
+    },
+    {
+        id: 'board-games',
+        title: 'Board Games',
+        note: 'Sucker for board games.',
+        groups: [
+            {
+                id: 'favourites',
+                label: 'Some Favourites',
+                items: [
+                    'Hanabi',
+                    'Sequence',
+                    'Dominion',
+                    'Dixit',
+                    'Settlers of Catan',
+                    'The Resistance: Avalon',
+                    'Call Break'
+                ]
+            }
+        ]
+    }
+];
