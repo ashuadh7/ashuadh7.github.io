@@ -35,7 +35,6 @@ interface ProjectPageLayoutProps {
   videos?: ProjectVideoEmbed[];
   talks?: ProjectLinkResource[];
   publications?: ProjectPublication[];
-  emptyPublicationsText?: string;
 }
 
 export function ProjectPageLayout({
@@ -49,7 +48,6 @@ export function ProjectPageLayout({
   videos = [],
   talks = [],
   publications = [],
-  emptyPublicationsText = "Publications for this project will be added as they become available.",
 }: ProjectPageLayoutProps) {
   return (
     <main className="bg-subtle min-h-screen">
@@ -155,9 +153,9 @@ export function ProjectPageLayout({
             </section>
           )}
 
-          <section className="mt-10 sm:mt-12 pt-8 border-t border-default">
-            <h2 className="mb-4 text-primary">Related Publications</h2>
-            {publications.length > 0 ? (
+          {publications.length > 0 && (
+            <section className="mt-10 sm:mt-12 pt-8 border-t border-default">
+              <h2 className="mb-4 text-primary">Related Publications</h2>
               <div className="space-y-5">
                 {publications.map((publication, index) => (
                   <div
@@ -187,10 +185,8 @@ export function ProjectPageLayout({
                   </div>
                 ))}
               </div>
-            ) : (
-              <p className="text-muted">{emptyPublicationsText}</p>
-            )}
-          </section>
+            </section>
+          )}
         </article>
       </div>
 

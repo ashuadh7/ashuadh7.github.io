@@ -65,6 +65,17 @@ const externalProjectResources: ExternalProjectResource[] = [
     linkText: "Read Coverage",
     publishedOn: "2021-12-10",
   },
+  {
+    id: "vr-chronic-pain-resource-1",
+    projectId: "vr-chronic-pain",
+    title:
+      "Virtual Meditative Walk: Virtual Reality Therapy for Chronic Pain Management",
+    url: "https://dl.acm.org/doi/abs/10.1145/2702123.2702344",
+    details:
+      "ACM publication describing the Virtual Meditative Walk (VMW) clinical proof-of-concept.",
+    linkText: "View Resource",
+    publishedOn: "2015-01-01",
+  },
 ];
 
 function toTimestamp(dateString: string): number {

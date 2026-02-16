@@ -13,7 +13,6 @@ export function FeelTheBeatProjectPage() {
       year={project.year}
       tags={project.tags}
       heroImage={project.image}
-      emptyPublicationsText="No publications are currently attached to this project."
     >
       <section className="space-y-4">
         <h2 className="text-primary">Project Concept</h2>

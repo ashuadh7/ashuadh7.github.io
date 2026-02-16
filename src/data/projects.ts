@@ -90,25 +90,25 @@ export const projects: Project[] = [
     id: 'vr-chronic-pain',
     path: '/projects/vr-chronic-pain',
     title: 'VR vs Chronic Pain',
-    shortDescription: 'Using virtual reality as a therapeutic tool for managing chronic pain through immersive distraction therapy.',
+    shortDescription: 'Collaborated with SFU Pain Studies Lab to modernize a mindfulness-based VR intervention for chronic pain.',
     image: '/projects/vr-chronic-pain/thumbnail.jpg',
-    tags: ['VR', 'Healthcare', 'Pain Management'],
-    year: '2023',
-    fullDescription: 'A therapeutic VR application designed to help patients manage chronic pain through immersive nature environments and guided mindfulness exercises. The project explores how presence and immersion can affect pain perception.',
-    objective: 'To develop and evaluate a VR-based intervention for chronic pain management that can be used as a complementary therapy.',
+    tags: ['VR', 'Pain Management', 'Mindfulness', 'Biofeedback'],
+    year: '2022',
+    fullDescription: 'At SFU\'s Pain Studies Lab (directed by Dr. Diane Gromala), I contributed to the Virtual Meditative Walk project by updating its mindfulness VR experience, modernizing the technical stack, and improving deployment practicality for research use.',
+    objective: 'To modernize and extend an evidence-informed VR mindfulness intervention for chronic pain while reducing technical setup barriers in clinical research workflows.',
     methodology: [
-      'Collaborated with pain management specialists and psychologists',
-      'Designed calming nature environments based on therapeutic principles',
-      'Integrated guided breathing exercises and mindfulness practices',
-      'Conducted clinical trials with 45 chronic pain patients over 8 weeks'
+      'Updated the VR application to newer Unity and headset/device versions used by the lab',
+      'Maintained the rail-based forest mindfulness experience with guided audio meditation content',
+      'Created multiple experience variations to reduce repetition across sessions',
+      'Integrated Moodmetric ring data capture over Bluetooth as a lower-cost biofeedback workflow'
     ],
     results: [
-      'Patients reported 28% reduction in pain intensity during VR sessions',
-      'Improved mood and reduced anxiety in 82% of participants',
-      'Effects persisted for 2-3 hours after VR session completion',
-      'Positive feedback from both patients and healthcare providers'
+      'Preserved the core therapeutic flow of the Virtual Meditative Walk while improving system maintainability',
+      'Enabled greater session variability without changing the intervention intent',
+      'Replaced an expensive GSR setup with a more accessible wearable pathway',
+      'Reduced participant startup friction through automated device connection and data retrieval'
     ],
-    technologies: ['Unity', 'Biofeedback Sensors', 'Meta Quest 2', 'Spatial Audio']
+    technologies: ['Unity', 'Bluetooth Integration', 'Moodmetric Ring (now Nuanic)', 'Biofeedback', 'Spatial Audio']
   },
   {
     id: 'feel-beat-vr',
