@@ -99,15 +99,15 @@ export function VrBeyondOrdinaryProjectPage() {
         <div className="grid sm:grid-cols-3 gap-4">
           <figure className="rounded-lg overflow-hidden border border-default bg-soft">
             <img
-              src={earthgazingImage}
-              alt="SIRIUS earthgazing scene from the Awedyssey project"
+              src={awedysseyPosterImage}
+              alt="Awedyssey poster"
               className="w-full h-52 object-cover"
             />
             <figcaption className="px-3 py-2 text-xs text-muted">
-              Earthgazing visual used for connection and perspective-taking.
+              Awedyssey research poster from the SIRIUS workstream.
             </figcaption>
           </figure>
-
+         
           <figure className="rounded-lg overflow-hidden border border-default bg-soft">
             <img
               src={issScreenshotImage}
@@ -121,23 +121,15 @@ export function VrBeyondOrdinaryProjectPage() {
 
           <figure className="rounded-lg overflow-hidden border border-default bg-soft">
             <img
-              src={awedysseyPosterImage}
-              alt="Awedyssey poster"
+              src={earthgazingImage}
+              alt="SIRIUS earthgazing scene from the Awedyssey project"
               className="w-full h-52 object-cover"
             />
             <figcaption className="px-3 py-2 text-xs text-muted">
-              Awedyssey research poster from the SIRIUS workstream.
+              Earthgazing visual used for connection and perspective-taking.
             </figcaption>
-          </figure>
+          </figure> 
         </div>
-        <a
-          href={zurichPosterPdf}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-accent hover-text-accent-strong transition-colors"
-        >
-          View Zurich Workshop Poster (PDF)
-        </a>
       </section>
     </ProjectPageLayout>
   );

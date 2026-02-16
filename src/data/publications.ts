@@ -79,7 +79,7 @@ export const publicationsData: Publication[] = [
     linkUrl: "https://ieeexplore.ieee.org/abstract/document/9894041/",
     category: "Peer-Reviewed Journals",
     publishedOn: "2022-01-01",
-    relatedProjectIds: ["exploring-endless-worlds-vr", "vr-beyond-ordinary"],
+    relatedProjectIds: ["exploring-endless-worlds-vr"],
   },
   {
     id: "journal-3",
@@ -190,7 +190,7 @@ export const publicationsData: Publication[] = [
     linkUrl: "https://doi.org/10.1145/3532834.3536211",
     category: "Exhibitions, Presentations, and Posters",
     publishedOn: "2022-06-01",
-    relatedProjectIds: ["exploring-endless-worlds-vr", "vr-beyond-ordinary"],
+    relatedProjectIds: ["exploring-endless-worlds-vr"],
   },
   {
     id: "exhibit-3",
