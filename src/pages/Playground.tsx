@@ -12,8 +12,8 @@ const books: Array<{
   route: string;
 }> = [
   {
-    title: "Selected Favourites",
-    description: "Books that had lasting impact on me.",
+    title: "Recent Favourites",
+    description: "Books that recently had a lasting impact on me.",
     icon: BookMarked,
     type: "completed",
     route: "favourites",

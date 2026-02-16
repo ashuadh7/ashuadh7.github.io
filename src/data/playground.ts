@@ -68,7 +68,7 @@ export const booksData: Book[] = [
         title: 'Born a Crime',
         authors: ['Trevor Noah'],
         category: 'completed',
-        coverImage: 'https://upload.wikimedia.org/wikipedia/en/f/fd/Born_a_Crime_by_Trevor_Noah_%28book_cover%29.jpg',
+        coverImage: '/books/born-a-crime/cover.jpg',
         notes: 'This book, along with Half of a Yellow Sun, helped me see how much humans share beneath the surface of culture. We often treat our own customs as singular and view others as fundamentally different. But when we look closely, those differences thin out. Climate, geography, flora, fauna, and resources shape culture, but power structures, struggles, fears, hopes, and love shape individuals and collectives much more convergently than we care to admit.',
         dateCompleted: '2024-05-20'
     },
@@ -77,7 +77,7 @@ export const booksData: Book[] = [
         title: 'Catch-22',
         authors: ['Joseph Heller'],
         category: 'completed',
-        coverImage: './books/catch-22/cover.jpg',
+        coverImage: '/books/catch-22/cover.jpg',
         notes: 'One of my favorites. A comedy with a philosophical core! What could I ask for more? This is THE BOOK I wish I could write myself.'
     },
     {
@@ -85,7 +85,7 @@ export const booksData: Book[] = [
         title: 'Poor Economics',
         authors: ['Abhijit V. Banerjee', 'Esther Duflo'],
         category: 'completed',
-        coverImage: './books/poor-economics/cover.jpg',
+        coverImage: '/books/poor-economics/cover.jpg',
         notes: 'Reshaped my understanding of poverty and development economics. I mean, they won a freaking Nobel Prize for it! But very accessible. And relatable to someone coming from a developing country.'
     },
     {
@@ -93,15 +93,57 @@ export const booksData: Book[] = [
         title: 'Freedom Is a Constant Struggle',
         authors: ['Angela Y. Davis'],
         category: 'completed',
-        coverImage: './books/freedom-is-a-constant-struggle/cover.jpg',
+        coverImage: '/books/freedom-is-a-constant-struggle/cover.jpg',
         notes: 'A collection of essays and speeches by Angela Y. Davis that explores the intersectionality. Reshaped my understanding of social justice and how to view marginalized communities.'
+    },
+    {
+        id: 'annihilation-of-caste',
+        title: 'Annihilation of Caste',
+        authors: ['B. R. Ambedkar'],
+        category: 'completed',
+        coverImage: '/books/annihilation-of-caste/cover.jpg',
+    },
+    {
+        id: 'braiding-sweetgrass',
+        title: 'Braiding Sweetgrass',
+        authors: ['Robin Wall Kimmerer'],
+        category: 'completed',
+        coverImage: '/books/braiding-sweetgrass/cover.jpg',
+    },
+    {
+        id: 'dune',
+        title: 'Dune',
+        authors: ['Frank Herbert'],
+        category: 'completed',
+        coverImage: '/books/dune/cover.jpg',
+    },
+    {
+        id: 'siddhartha',
+        title: 'Siddhartha',
+        authors: ['Hermann Hesse'],
+        category: 'completed',
+        coverImage: '/books/siddhartha/cover.jpg',
+    },
+    {
+        id: 'the-hitchhikers-guide-to-the-galaxy',
+        title: 'The Hitchhiker\'s Guide to the Galaxy',
+        authors: ['Douglas Adams'],
+        category: 'completed',
+        coverImage: '/books/the-hitchhikers-guide-to-the-galaxy/cover.jpg',
+    },
+    {
+        id: 'the-unbearable-lightness-of-being',
+        title: 'The Unbearable Lightness of Being',
+        authors: ['Milan Kundera'],
+        category: 'completed',
+        coverImage: '/books/the-unbearable-lightness-of-being/cover.jpg',
     },
     {
         id: 'a-body-undone',
         title: 'A Body Undone',
         authors: ['Christina Crosby'],
         category: 'reading',
-        coverImage: './books/a-body-undone/cover.jpg',
+        coverImage: '/books/a-body-undone/cover.jpg',
         dateStarted: '2025-05-15'
     },
     {
@@ -109,7 +151,7 @@ export const booksData: Book[] = [
         title: 'The Remains of the Day',
         authors: ['Kazuo Ishiguro'],
         category: 'reading',
-        coverImage: './books/the-remains-of-the-day/cover.jpg',
+        coverImage: '/books/the-remains-of-the-day/cover.jpg',
         dateStarted: '2025-06-01'
     },
     {
@@ -117,7 +159,7 @@ export const booksData: Book[] = [
         title: 'The Man in the High Castle',
         authors: ['Philip K. Dick'],
         category: 'reading',
-        coverImage: './books/the-man-in-the-high-castle/cover.jpg',
+        coverImage: '/books/the-man-in-the-high-castle/cover.jpg',
         dateStarted: '2025-06-01'
     },
     {
@@ -125,7 +167,7 @@ export const booksData: Book[] = [
         title: 'Metaphors We Live By',
         authors: ['George Lakoff', 'Mark Johnson'],
         category: 'reading',
-        coverImage: './books/metaphors-we-live-by/cover.jpg',
+        coverImage: '/books/metaphors-we-live-by/cover.jpg',
         dateStarted: '2025-12-15'
     },
     {
@@ -133,7 +175,7 @@ export const booksData: Book[] = [
         title: 'The Design of Everyday Things',
         authors: ['Don Norman'],
         category: 'reading',
-        coverImage: './books/the-design-of-everyday-things/cover.jpg',
+        coverImage: '/books/the-design-of-everyday-things/cover.jpg',
         dateStarted: '2025-12-15'
     },
     {
@@ -141,21 +183,21 @@ export const booksData: Book[] = [
         title: 'Thinking, Fast and Slow',
         authors: ['Daniel Kahneman'],
         category: 'wishlist',
-        coverImage: './books/thinking-fast-and-slow/cover.jpg',
+        coverImage: '/books/thinking-fast-and-slow/cover.jpg',
     },
     {
         id: 'east-of-eden',
         title: 'East of Eden',
         authors: ['John Steinbeck'],
         category: 'wishlist',
-        coverImage: './books/east-of-eden/cover.jpg',
+        coverImage: '/books/east-of-eden/cover.jpg',
     },
     {
-        id: 'Brave-New-World',
+        id: 'brave-new-world',
         title: 'Brave New World',
         authors: ['Aldous Huxley'],
         category: 'wishlist',
-        coverImage: './books/brave-new-world/cover.jpg',
+        coverImage: '/books/brave-new-world/cover.jpg',
     }
 ];
 

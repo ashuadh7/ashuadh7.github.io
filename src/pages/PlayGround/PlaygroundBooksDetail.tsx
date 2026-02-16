@@ -18,7 +18,7 @@ export function PlaygroundBooksDetail() {
   const books = booksData.filter((book) => book.category === categoryKey);
 
   const categoryTitles = {
-    favourites: "Some of my Favourites",
+    favourites: "Recent Favourites",
     "currently-reading": "Currently Reading",
     wishlist: "Wishlist",
   };
