@@ -17,7 +17,6 @@ export function ProjectPlaygroundProjectPage() {
       tags={project.tags}
       heroImage={project.image}
       talks={talksAndResources}
-      emptyPublicationsText="This project acts as an incubator. Publications are usually linked from the downstream projects that emerge from this space."
     >
       <section className="space-y-4">
         <h2 className="text-primary">Why This Exists</h2>
