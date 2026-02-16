@@ -13,7 +13,6 @@ const earthgazingImage = "/projects/vr-beyond-ordinary/SIRIUS_Earthgazing.jpg";
 const issScreenshotImage = "/projects/vr-beyond-ordinary/Screen-Shot-ISS.jpg";
 const awedysseyPosterImage =
   "/projects/vr-beyond-ordinary/Awedyssey-Poster-2022-07-10.jpg";
-const zurichPosterPdf = "/projects/vr-beyond-ordinary/poster_zurich.pdf";
 
 interface GalleryItem {
   src: string;
@@ -192,6 +191,86 @@ export function VrBeyondOrdinaryProjectPage() {
                 </span>
               </button>
             ))}
+          </div>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-primary">Contributions</h2>
+          <div className="space-y-1">
+            <p className="text-secondary leading-snug">
+              Alex Stahn: Funding acquisition, project
+              administration, supervision, conceptualization, methodology
+              (experimental design).
+            </p>
+            <p className="text-secondary leading-snug">
+              Bernhard Riecke: Conceptualization, methodology
+              (experimental design, narrative concept), supervision.
+            </p>
+            <p className="text-secondary leading-snug">
+              Noah Miller: Software, methodology (art design,
+              experimental design, experience design and development), data
+              curation.
+            </p>
+            <p className="text-secondary leading-snug">
+              John Desnoyers-Stewart: Software, methodology
+              (art design, experience design and development, narrative
+              concept).
+            </p>
+            <p className="text-secondary leading-snug">
+              Katerina Stepanova: Methodology (art design,
+              narrative concept, voiceover, experimental design),
+              investigation, data curation.
+            </p>
+            <p className="text-secondary leading-snug">
+              <strong>Ashu Adhikari</strong>: Software, Methodology (art
+              design, experience design and development).
+            </p>
+            <p className="text-secondary leading-snug">
+              Patrick Pennefather: Methodology (art design,
+              sound design).
+            </p>
+            <p className="text-secondary leading-snug">
+              Alex Kitson: Methodology (narrative concept, art
+              design).
+            </p>
+            <p className="text-secondary leading-snug">
+              Denise Quesnel: Methodology (narrative concept,
+              art design).
+            </p>
+            <p className="text-secondary leading-snug">
+              Katharina Brauns: Methodology (experimental
+              design), data curation, investigation.
+            </p>
+            <p className="text-secondary leading-snug">
+              Anika Friedl-Werner: Methodology (experimental
+              design), data curation, investigation.
+            </p>
+          </div>
+
+          <h3 className="text-primary">Artists Credits</h3>
+          <div className="space-y-1">
+            <p className="text-secondary leading-snug">
+              Artists: Noah Miller, John Desnoyers-Stewart, Katerina Stepanova,{" "}
+              <strong>Ashu Adhikari</strong>, Bernhard Riecke, Patrick
+              Pennefather, Alex Kitson, Denise Quesnel.
+            </p>
+            <p className="text-secondary leading-snug">
+              Experience Design and Development: Noah Miller,
+              John Desnoyers-Stewart, <strong>Ashu Adhikari</strong>.
+            </p>
+            <p className="text-secondary leading-snug">
+              Direction: Bernhard Riecke.
+            </p>
+            <p className="text-secondary leading-snug">
+              Narrative and Concept: Katerina Stepanova, John
+              Desnoyers-Stewart, Alex Kitson, Denise Quesnel.
+            </p>
+            <p className="text-secondary leading-snug">
+              Voiceover: Katerina Stepanova.
+            </p>
+            <p className="text-secondary leading-snug">
+              Sound Design: Patrick Pennefather.
+            </p>
           </div>
         </section>
       </ProjectPageLayout>
