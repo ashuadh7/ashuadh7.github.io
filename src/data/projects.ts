@@ -138,25 +138,25 @@ export const projects: Project[] = [
     id: 'project-playground',
     path: '/projects/project-playground',
     title: 'Project Playground',
-    shortDescription: 'An experimental sandbox for prototyping and testing new HCI concepts rapidly.',
+    shortDescription: 'Ongoing and ideation-stage collaborations across XR theatre and human-AI interface research.',
     image: '/projects/project-playground/thumbnail.jpg',
-    tags: ['Prototyping', 'HCI', 'Experimental', 'Research'],
+    tags: ['Ongoing Work', 'Ideation', 'XR', 'Human-AI Interaction'],
     year: '2022-Present',
-    fullDescription: 'A flexible development environment and methodology for rapid prototyping of HCI concepts. This meta-project serves as an incubator for new ideas and a platform for quick experimentation.',
-    objective: 'To establish an efficient workflow for exploring and validating novel HCI concepts before committing to full-scale development.',
+    fullDescription: 'Project Playground captures active collaborations that are still in exploration mode. It is used to test high-risk ideas quickly, validate technical feasibility, and refine research directions before full publication-ready project framing.',
+    objective: 'To run fast, evidence-oriented experiments for ongoing collaborations while keeping scope and disclosure appropriate for active and partially constrained projects.',
     methodology: [
-      'Created modular framework supporting multiple interaction modalities',
-      'Established rapid prototyping process from concept to testable demo',
-      'Built library of reusable components and interaction patterns',
-      'Conducted quick validation studies with small user groups'
+      'Frame each collaboration as a compact set of technical/design questions',
+      'Prototype candidate interaction models and instrumentation pipelines rapidly',
+      'Collect early feasibility signals to select or discard directions',
+      'Promote successful tracks into dedicated projects with fuller documentation'
     ],
     results: [
-      'Reduced prototyping time from weeks to days',
-      'Generated over 20 concept prototypes in one year',
-      '5 concepts advanced to full research projects',
-      'Framework adopted by other lab members'
+      'Supports active tracks in XR theatre production and AI-assisted design/coding research',
+      'Provides NDA-safe and early-stage documentation for in-progress collaborations',
+      'Accelerates transition from ideation to concrete research plans',
+      'Improves cross-disciplinary coordination with arts, HCI, and software engineering partners'
     ],
-    technologies: ['Unity', 'React', 'Node.js', 'WebXR', 'Various Sensors']
+    technologies: ['Unity', 'XR Prototyping', 'Figma Make', 'LLM-Assisted Design', 'Human-AI Interface Design']
   }
 ];
 

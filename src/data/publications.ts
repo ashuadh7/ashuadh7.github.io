@@ -255,7 +255,7 @@ export const publicationsData: Publication[] = [
     linkUrl: "https://www.youtube.com/watch?v=jzoaBAd6gPY",
     category: "Exhibitions, Presentations, and Posters",
     publishedOn: "2021-09-13",
-    relatedProjectIds: ["exploring-endless-worlds-vr", "project-playground"],
+    relatedProjectIds: ["exploring-endless-worlds-vr"],
   },
   {
     id: "exhibit-7",
