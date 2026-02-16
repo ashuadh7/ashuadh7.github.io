@@ -114,25 +114,25 @@ export const projects: Project[] = [
     id: 'feel-beat-vr',
     path: '/projects/feel-the-beat',
     title: 'Feel the Beat in VR',
-    shortDescription: 'A rhythm-based VR experience that combines music visualization with full-body interaction.',
+    shortDescription: 'NDA-constrained R&D consulting for embodied interfaces that map VR object dynamics to generative music.',
     image: '/projects/feel-the-beat/thumbnail.jpg',
-    tags: ['VR', 'Music', 'Audio-Visual', 'Gaming'],
-    year: '2023',
-    fullDescription: 'An immersive rhythm game where players interact with music through physical movements in VR. The project investigates how multi-sensory feedback enhances rhythm perception and musical engagement.',
-    objective: 'To explore the potential of VR for creating more engaging and physically active musical experiences.',
+    tags: ['VR', 'Generative Music', 'Embodied Interaction', 'Consulting'],
+    year: '2020-2025',
+    fullDescription: 'As a software consultant with Infusions Systems Ltd., I explored embodied VR interfaces for generative music under NDA constraints, focusing on quantifying virtual object behavior as music control signals.',
+    objective: 'To test whether performative body movement and object interaction in VR can be converted into robust numeric features for generative music control.',
     methodology: [
-      'Developed real-time audio analysis system for music visualization',
-      'Created procedural animation systems responding to musical features',
-      'Implemented full-body tracking for natural movement interaction',
-      'Tested with 50 participants of varying musical backgrounds'
+      'Prototyped object-interaction experiments around particles, flexible materials, and soft-body behavior',
+      'Derived numeric descriptors from object properties such as spread, reflection, bend, twist, and orientation',
+      'Evaluated candidate mappings from interaction features to musical control parameters',
+      'Iterated in rapid R&D cycles to compare expressiveness and controllability of each approach'
     ],
     results: [
-      'Participants showed improved rhythm accuracy compared to traditional games',
-      'High engagement and motivation for repeated play sessions',
-      'Physical activity levels comparable to moderate exercise',
-      'Musicians and non-musicians equally enjoyed the experience'
+      'Established multiple proof-of-concept pipelines for quantifying embodied VR interactions',
+      'Identified promising feature sets for expressive generative music mapping',
+      'Produced NDA-safe demo artifacts that capture core technical directions',
+      'Generated implementation insights for future interactive music tooling in immersive media'
     ],
-    technologies: ['Unity', 'FMOD', 'Full-Body Tracking', 'Particle Systems', 'Valve Index']
+    technologies: ['Unity', 'C#', 'Generative Music Prototyping', 'Particle Systems', 'Soft-Body Simulation', 'Feature Extraction']
   },
   {
     id: 'project-playground',
