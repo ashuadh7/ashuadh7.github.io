@@ -66,25 +66,25 @@ export const projects: Project[] = [
     id: 'master-emotions-vr',
     path: '/projects/master-your-emotions',
     title: 'Master Your Emotions in VR',
-    shortDescription: 'A VR application for emotional regulation training using biofeedback and guided scenarios.',
+    shortDescription: 'Two linked studies on emotion regulation in VR for teens and young adults: co-design workshops and VRChat go-along interviews.',
     image: '/projects/master-your-emotions/thumbnail.jpg',
-    tags: ['VR', 'Mental Health', 'Biofeedback', 'Training'],
-    year: '2022',
-    fullDescription: 'A therapeutic VR system that teaches emotional regulation skills through interactive scenarios with real-time biofeedback. The application adapts to users\' physiological responses and guides them through evidence-based techniques.',
-    objective: 'To create an accessible, engaging platform for learning and practicing emotional regulation strategies.',
+    tags: ['VR', 'Emotion Regulation', 'Adolescents', 'Young Adults', 'Participatory Design'],
+    year: '2024-2026',
+    fullDescription: 'This project investigates how immersive and social VR can support emotion regulation for teens and young adults. It combines participatory co-design with adolescents and in-situ VRChat research with youth users.',
+    objective: 'To identify youth-centered design opportunities for VR-based emotion regulation supports that are practical, safe, and relevant to everyday social contexts.',
     methodology: [
-      'Integrated heart rate and galvanic skin response sensors',
-      'Designed progressive difficulty scenarios triggering different emotions',
-      'Implemented adaptive feedback based on physiological data',
-      'Validated with clinical psychologists and 60 test users'
+      'Ran three in-person co-design workshops with high-school students (N=69, ages 15-18) across two schools with different socioeconomic contexts',
+      'Used workshop activities to explore cognitive reappraisal challenges and generate design ideas for VR supports',
+      'Conducted an online survey (N=64) and follow-up go-along interviews in VRChat (N=21) with youth ages 13-24',
+      'Analyzed strategies, platform features, and interaction patterns that support or hinder adaptive emotion regulation'
     ],
     results: [
-      'Users demonstrated improved emotional awareness after 4 weeks',
-      'Self-reported stress levels decreased by 32%',
-      'Skills transfer observed in daily life situations',
-      'Promising results for anxiety and stress management applications'
+      'Mapped how teens and young adults currently use social VR spaces to regulate emotions',
+      'Identified concrete design opportunities for future VR interventions focused on cognitive reappraisal and social support',
+      'Produced a CHI 2024 publication from the co-design workshop study',
+      'Prepared a DIS 2026 submission from the VRChat go-along interview study'
     ],
-    technologies: ['Unity', 'Heart Rate Monitors', 'GSR Sensors', 'C#', 'Meta Quest 2']
+    technologies: ['VRChat', 'Meta Quest 2', 'Participatory Co-design', 'Go-Along Interviews', 'Qualitative Analysis']
   },
   {
     id: 'vr-chronic-pain',

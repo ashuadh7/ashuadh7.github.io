@@ -139,6 +139,19 @@ export const publicationsData: Publication[] = [
     relatedProjectIds: ["master-emotions-vr"],
   },
   {
+    id: "conf-4",
+    title:
+      "Youth Perspectives and Design Opportunities for Emotion Regulation in Social Virtual Reality.",
+    authors:
+      "Alexandra Kitson, Alissa N. Antle, **Ashu Adhikari**, Kenneth Karthik, Petr Slovak, & Katherine Isbister.",
+    venue: "Under submission to DIS 2026 (Designing Interactive Systems).",
+    linkText: "DIS (Submission in Progress)",
+    linkUrl: "https://dis.acm.org/",
+    category: "Other Peer-Reviewed Publications",
+    publishedOn: "2026-02-16",
+    relatedProjectIds: ["master-emotions-vr"],
+  },
+  {
     id: "conf-2",
     title:
       "Awedyssey: Design tensions in eliciting self-transcendent emotions in virtual reality to support mental well-being and connection.",
