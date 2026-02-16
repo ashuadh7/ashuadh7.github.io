@@ -122,7 +122,7 @@ export function ExploringEndlessWorldsProjectPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-primary">Topic 1: Leaning-Based Interaction</h2>
+          <h2 className="text-primary">Leaning-Based Interaction</h2>
           <p className="text-secondary leading-relaxed">
             We compared leaning-based interfaces against handheld controllers in
             flying and navigation tasks. The key idea was simple: if movement
@@ -146,7 +146,7 @@ export function ExploringEndlessWorldsProjectPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-primary">Topic 2: HyperJump</h2>
+          <h2 className="text-primary">HyperJump</h2>
           <p className="text-secondary leading-relaxed">
             Continuous locomotion supports path integration but can become
             uncomfortable at higher speeds. Teleportation enables fast travel but
