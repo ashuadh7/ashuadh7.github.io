@@ -42,25 +42,25 @@ export const projects: Project[] = [
     id: 'vr-beyond-ordinary',
     path: '/projects/vr-beyond-ordinary',
     title: 'VR Beyond the Ordinary',
-    shortDescription: 'Pushing the boundaries of what\'s possible in VR through experimental interaction techniques.',
+    shortDescription: 'Awedyssey: designing transformative VR experiences that support well-being, awe, and connection.',
     image: '/projects/vr-beyond-ordinary/thumbnail.jpg',
-    tags: ['VR', 'Experimental Design', 'Novel Interactions'],
-    year: '2024',
-    fullDescription: 'An experimental VR project that challenges conventional interaction paradigms by introducing novel mechanics based on gaze, gesture, and environmental manipulation. This project serves as a testbed for innovative VR interaction concepts.',
-    objective: 'To explore and evaluate unconventional interaction techniques that go beyond traditional controller-based VR interfaces.',
+    tags: ['VR', 'Mental Well-being', 'Self-Transcendence', 'Awe', 'Space Analog'],
+    year: '2021-2023',
+    fullDescription: 'Awedyssey explores how VR can elicit self-transcendent emotions such as awe to support mental well-being and connection. The project was developed through a space-analog isolation context and later deployed in public exhibitions.',
+    objective: 'To design and evaluate transformative VR experiences that promote relaxation, reflection, and connection in contexts where isolation and sensory monotony are major stressors.',
     methodology: [
-      'Designed 10 experimental interaction techniques combining gaze, gesture, and haptics',
-      'Created a sandbox VR environment for testing each technique',
-      'Conducted comparative studies measuring efficiency and user preference',
-      'Iteratively refined techniques based on user feedback'
+      'Grounded design in self-transcendent emotion theory and transformative experience design',
+      'Developed and iterated Awedyssey as a VR experience inspired by nature, awe, and the overview effect',
+      'Deployed in the SIRIUS long-duration isolation study and curated public exhibition settings',
+      'Synthesized cross-context insights around realism, autonomy, vastness, comfort, and user diversity'
     ],
     results: [
-      'Three interaction techniques showed significant improvement over traditional methods',
-      'Eye-tracking combined with gesture reduced selection time by 35%',
-      'Users expressed interest in context-aware interaction switching',
-      'Published findings at IEEE VR 2024'
+      'Produced the DIS 2023 paper on design tensions in eliciting self-transcendent emotions in VR',
+      'Exhibited Awedyssey in curated mixed reality and virtual reality exhibition programs',
+      'Showed how VR can support feelings of connection to self, humanity, nature, and Earth',
+      'Generated practical design guidance for emotionally meaningful VR experiences in high-isolation contexts'
     ],
-    technologies: ['Unreal Engine', 'C++', 'Eye Tracking', 'Leap Motion', 'HTC Vive Pro Eye']
+    technologies: ['Unity', 'VR Experience Design', 'Qualitative Research', 'Exhibition Deployment', 'Space Psychology Context']
   },
   {
     id: 'vr-chronic-pain',
