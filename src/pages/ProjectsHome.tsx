@@ -6,11 +6,6 @@ import { Footer } from '@/components/Footer';
 export function ProjectsHome() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
-      <div className="mb-10 sm:mb-12">
-        <h2 className="mb-4 text-primary">Projects</h2>
-        <p className="text-muted">Explore the projects I have worked on.</p>
-      </div>
-      
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {projects.map((project) => (
           <Link
@@ -39,7 +34,7 @@ export function ProjectsHome() {
           </Link>
         ))}
       </div>
-      
+
     <Footer />
     </main>
   );

@@ -24,7 +24,7 @@ export function About() {
                   About Me
                 </h1>
                 <p className="text-secondary leading-relaxed">
-                  Hi, I&apos;m Ashu, an interaction designer and HCI researcher
+                  Hi, I&apos;m Ashu, an HCI researcher and interaction designer
                   focused on communication through intuitive interaction. I work
                   across XR and interactive systems, with a strong interest in
                   embodied interaction and information visualization to help

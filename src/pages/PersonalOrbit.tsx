@@ -66,10 +66,9 @@ export function PersonalOrbit() {
     <main className="bg-subtle min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
         <div className="mb-10 sm:mb-12">
-          <h1 className="mb-4 text-primary">Personal Orbit</h1>
           <p className="text-muted">
-            A collection of my selected projects, books, games, and other
-            interests outside of research.
+            My life has many satellites: books, games, shows, and side quests,
+            all orbiting around research and occasionally stealing the spotlight.
           </p>
         </div>
 
