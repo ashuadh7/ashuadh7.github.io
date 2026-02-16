@@ -55,7 +55,7 @@ export function PersonalOrbitBooksDetail() {
               className="bg-surface rounded-lg p-4 sm:p-6 shadow-sm border border-default hover:shadow-md transition-all flex flex-col md:flex-row gap-4 sm:gap-6"
             >
               {book.coverImage && (
-                <div className="flex-shrink-0 w-full md:w-32 h-44 sm:h-48 bg-soft rounded-md overflow-hidden shadow-sm">
+                <div className="flex-shrink-0 w-36 sm:w-40 md:w-36 aspect-[2/3] mx-auto md:mx-0 bg-soft rounded-md overflow-hidden shadow-sm">
                   <img
                     src={book.coverImage}
                     alt={`Cover of ${book.title}`}
