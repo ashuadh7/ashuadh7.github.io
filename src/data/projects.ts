@@ -63,6 +63,30 @@ export const projects: Project[] = [
     technologies: ['Unity', 'VR Experience Design', 'Qualitative Research', 'Exhibition Deployment', 'Space Psychology Context']
   },
   {
+    id: 'master-emotions-vr',
+    path: '/projects/master-your-emotions',
+    title: 'Master Your Emotions in VR',
+    shortDescription: 'A VR application for emotional regulation training using biofeedback and guided scenarios.',
+    image: '/projects/master-your-emotions/thumbnail.jpg',
+    tags: ['VR', 'Mental Health', 'Biofeedback', 'Training'],
+    year: '2022',
+    fullDescription: 'A therapeutic VR system that teaches emotional regulation skills through interactive scenarios with real-time biofeedback. The application adapts to users\' physiological responses and guides them through evidence-based techniques.',
+    objective: 'To create an accessible, engaging platform for learning and practicing emotional regulation strategies.',
+    methodology: [
+      'Integrated heart rate and galvanic skin response sensors',
+      'Designed progressive difficulty scenarios triggering different emotions',
+      'Implemented adaptive feedback based on physiological data',
+      'Validated with clinical psychologists and 60 test users'
+    ],
+    results: [
+      'Users demonstrated improved emotional awareness after 4 weeks',
+      'Self-reported stress levels decreased by 32%',
+      'Skills transfer observed in daily life situations',
+      'Promising results for anxiety and stress management applications'
+    ],
+    technologies: ['Unity', 'Heart Rate Monitors', 'GSR Sensors', 'C#', 'Meta Quest 2']
+  },
+  {
     id: 'vr-chronic-pain',
     path: '/projects/vr-chronic-pain',
     title: 'VR vs Chronic Pain',
@@ -109,30 +133,6 @@ export const projects: Project[] = [
       'Musicians and non-musicians equally enjoyed the experience'
     ],
     technologies: ['Unity', 'FMOD', 'Full-Body Tracking', 'Particle Systems', 'Valve Index']
-  },
-  {
-    id: 'master-emotions-vr',
-    path: '/projects/master-your-emotions',
-    title: 'Master Your Emotions in VR',
-    shortDescription: 'A VR application for emotional regulation training using biofeedback and guided scenarios.',
-    image: '/projects/master-your-emotions/thumbnail.jpg',
-    tags: ['VR', 'Mental Health', 'Biofeedback', 'Training'],
-    year: '2022',
-    fullDescription: 'A therapeutic VR system that teaches emotional regulation skills through interactive scenarios with real-time biofeedback. The application adapts to users\' physiological responses and guides them through evidence-based techniques.',
-    objective: 'To create an accessible, engaging platform for learning and practicing emotional regulation strategies.',
-    methodology: [
-      'Integrated heart rate and galvanic skin response sensors',
-      'Designed progressive difficulty scenarios triggering different emotions',
-      'Implemented adaptive feedback based on physiological data',
-      'Validated with clinical psychologists and 60 test users'
-    ],
-    results: [
-      'Users demonstrated improved emotional awareness after 4 weeks',
-      'Self-reported stress levels decreased by 32%',
-      'Skills transfer observed in daily life situations',
-      'Promising results for anxiety and stress management applications'
-    ],
-    technologies: ['Unity', 'Heart Rate Monitors', 'GSR Sensors', 'C#', 'Meta Quest 2']
   },
   {
     id: 'project-playground',
