@@ -176,10 +176,6 @@ export function ExploringEndlessWorldsProjectPage() {
 
         <section className="space-y-4">
           <h2 className="text-primary">Video Gallery</h2>
-          <p className="text-muted text-sm">
-            Click a video to open the full-screen viewer. Use left and right
-            arrows to move between videos.
-          </p>
           <div className="grid sm:grid-cols-3 gap-4">
             {videoItems.map((video, index) => (
               <button

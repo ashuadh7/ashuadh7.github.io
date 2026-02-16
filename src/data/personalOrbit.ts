@@ -36,7 +36,7 @@ export const selectedWorksData: SelectedWorks[] = [
         title: 'Call Break Game',
         description: 'A digital version of the popular Nepali card game Call Break with multiplayer support.',
         status: 'Active',
-        externalLink: 'https://github.com/ashuadh7/CallBreakGame',
+        externalLink: 'https://github.com/prasantadh/callbreak-np',
         technologies: ['Unity', 'C#', 'Photon Networking', 'Rust'],
         icon: ExternalLink,
     },
