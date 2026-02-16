@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Layers, User, BookOpen, LandPlot, Sun, Moon } from 'lucide-react';
+import { Layers, User, BookOpen, Orbit, Sun, Moon } from 'lucide-react';
 import { useTheme } from '@/theme/ThemeProvider';
 
 export function Navigation() {
@@ -28,7 +28,7 @@ export function Navigation() {
 
     const navItems = [
         { path: '/', label: 'Projects', shortLabel: 'Projects', icon: Layers },
-        { path: '/playground', label: 'Playground', shortLabel: 'Play', icon: LandPlot },
+        { path: '/personal-orbit', label: 'Personal Orbit', shortLabel: 'Orbit', icon: Orbit },
         { path: '/about', label: 'About', shortLabel: 'About', icon: User },
         { path: '/publications', label: 'Publications', shortLabel: 'Pubs', icon: BookOpen },
     ];

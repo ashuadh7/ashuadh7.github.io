@@ -1,9 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { BookMarked, ArrowLeft, Calendar } from "lucide-react";
-import { booksData } from "../../data/playground";
+import { booksData } from "../../data/personalOrbit";
 import { Footer } from "@/components/Footer";
 
-export function PlaygroundBooksDetail() {
+export function PersonalOrbitBooksDetail() {
   const { category } = useParams<{ category: string }>();
   const navigate = useNavigate();
 
@@ -18,7 +18,7 @@ export function PlaygroundBooksDetail() {
   const books = booksData.filter((book) => book.category === categoryKey);
 
   const categoryTitles = {
-    favourites: "Some of my Favourites",
+    favourites: "Recent Favourites",
     "currently-reading": "Currently Reading",
     wishlist: "Wishlist",
   };
@@ -30,11 +30,11 @@ export function PlaygroundBooksDetail() {
     <main className="bg-subtle min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
         <button
-          onClick={() => navigate("/playground")}
+          onClick={() => navigate("/personal-orbit")}
           className="flex items-center gap-2 text-accent hover-text-accent-strong mb-8 transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />
-          Back to Playground
+          Back to Personal Orbit
         </button>
 
         <div className="mb-10 sm:mb-12">
