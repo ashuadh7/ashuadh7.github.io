@@ -52,16 +52,7 @@ export function About() {
                     <span className="text-primary font-semibold">
                       XR Interaction & UI/UX Design
                     </span>{" "}
-                    - Designing interaction patterns that make immersive systems
-                    feel natural, learnable, and usable.
-                  </li>
-                  <li className="text-secondary">
-                    <span className="text-primary font-semibold">
-                      Embodied Interaction Research
-                    </span>{" "}
-                    - Studying how movement and physical actions in XR can
-                    improve how people understand, control, and communicate
-                    through digital environments.
+                    - Designing XR interactions in Unity and Unreal. Making UI and UX decisions that prioritize user needs and intuitive use.
                   </li>
                   <li className="text-secondary">
                     <span className="text-primary font-semibold">
