@@ -28,7 +28,7 @@ export function Navigation() {
 
     const navItems = [
         { path: '/', label: 'Projects', shortLabel: 'Projects', icon: Layers },
-        { path: '/playground', label: 'Personal Orbit', shortLabel: 'Orbit', icon: Orbit },
+        { path: '/personal-orbit', label: 'Personal Orbit', shortLabel: 'Orbit', icon: Orbit },
         { path: '/about', label: 'About', shortLabel: 'About', icon: User },
         { path: '/publications', label: 'Publications', shortLabel: 'Pubs', icon: BookOpen },
     ];

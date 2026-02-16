@@ -1,6 +1,6 @@
 import { Code2, BookMarked, ExternalLink, Star } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { selectedWorksData, getBookCount } from "@/data/playground";
+import { selectedWorksData, getBookCount } from "@/data/personalOrbit";
 import React from "react";
 import { Footer } from "@/components/Footer";
 
@@ -34,7 +34,7 @@ const books: Array<{
   },
 ];
 
-export function Playground() {
+export function PersonalOrbit() {
   const navigate = useNavigate();
 
   const handleExternalLink = (e: React.MouseEvent, url: string) => {
@@ -112,7 +112,7 @@ export function Playground() {
             {books.map((book, index) => (
               <div
                 key={index}
-                onClick={() => navigate(`/playground/books/${book.route}`)}
+                onClick={() => navigate(`/personal-orbit/books/${book.route}`)}
                 className="block bg-surface rounded-lg p-4 sm:p-6 shadow-sm hover:shadow-md transition-all border border-default cursor-pointer group"
               >
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
