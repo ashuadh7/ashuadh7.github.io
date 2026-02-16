@@ -79,7 +79,7 @@ export const publicationsData: Publication[] = [
     linkUrl: "https://ieeexplore.ieee.org/abstract/document/9894041/",
     category: "Peer-Reviewed Journals",
     publishedOn: "2022-01-01",
-    relatedProjectIds: ["exploring-endless-worlds-vr", "vr-beyond-ordinary"],
+    relatedProjectIds: ["exploring-endless-worlds-vr"],
   },
   {
     id: "journal-3",
@@ -150,7 +150,7 @@ export const publicationsData: Publication[] = [
     linkUrl: "https://doi.org/10.1145/3563657.3595998",
     category: "Other Peer-Reviewed Publications",
     publishedOn: "2023-07-10",
-    relatedProjectIds: ["master-emotions-vr"],
+    relatedProjectIds: ["vr-beyond-ordinary"],
   },
   {
     id: "conf-3",
@@ -177,7 +177,7 @@ export const publicationsData: Publication[] = [
     linkUrl: "https://events.sfu.ca/event/37966-cosmic-nights-humans-in-space",
     category: "Exhibitions, Presentations, and Posters",
     publishedOn: "2023-11-23",
-    relatedProjectIds: ["master-emotions-vr"],
+    relatedProjectIds: ["vr-beyond-ordinary"],
   },
   {
     id: "exhibit-2",
@@ -190,7 +190,7 @@ export const publicationsData: Publication[] = [
     linkUrl: "https://doi.org/10.1145/3532834.3536211",
     category: "Exhibitions, Presentations, and Posters",
     publishedOn: "2022-06-01",
-    relatedProjectIds: ["exploring-endless-worlds-vr", "vr-beyond-ordinary"],
+    relatedProjectIds: ["exploring-endless-worlds-vr"],
   },
   {
     id: "exhibit-3",
@@ -255,7 +255,21 @@ export const publicationsData: Publication[] = [
       "https://www.alliancefrancaise.ca/v-unframed/en/the-artworks-2021/sirius/",
     category: "Exhibitions, Presentations, and Posters",
     publishedOn: "2021-11-01",
-    relatedProjectIds: ["master-emotions-vr"],
+    relatedProjectIds: ["vr-beyond-ordinary"],
+  },
+  {
+    id: "exhibit-8",
+    title:
+      "A Neurophenomenological Approach to Better Understand the Effects of Eliciting Positive Experiences in Virtual Reality [Poster].",
+    authors:
+      "Stepanova, E.R., Brauns, K., Friedl-Werner, A., Miller, N., Desnoyers-Stewart, J., **Adhikari, A.**, Riecke, B.E., & Stahn, A.C.",
+    venue:
+      "Poster presented at the Phenomenological Methods in Neuroscience and Consciousness Research workshop, University of Zurich (2022).",
+    linkText: "View Poster (PDF)",
+    linkUrl: "/projects/vr-beyond-ordinary/poster_zurich.pdf",
+    category: "Exhibitions, Presentations, and Posters",
+    publishedOn: "2022-01-01",
+    relatedProjectIds: ["vr-beyond-ordinary"],
   },
 ];
 
