@@ -184,6 +184,8 @@ export function VrBeyondOrdinaryProjectPage() {
                 <img
                   src={item.src}
                   alt={item.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-52 object-cover"
                 />
                 <span className="block px-3 py-2 text-xs text-muted">
@@ -315,6 +317,7 @@ export function VrBeyondOrdinaryProjectPage() {
               <img
                 src={activeItem.src}
                 alt={activeItem.alt}
+                decoding="async"
                 className="max-h-[75vh] max-w-full w-auto object-contain rounded-lg border border-white/20 bg-black"
               />
               <p className="text-sm text-white/90 text-center">

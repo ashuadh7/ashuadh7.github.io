@@ -108,6 +108,8 @@ export function FeelTheBeatProjectPage() {
                 <img
                   src={demo.image}
                   alt={demo.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto object-cover"
                 />
               </div>

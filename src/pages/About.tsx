@@ -11,6 +11,9 @@ export function About() {
               <img
                 src="/about.jpeg"
                 alt="Ashu Adhikari"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
                 className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg"
               />
             </div>

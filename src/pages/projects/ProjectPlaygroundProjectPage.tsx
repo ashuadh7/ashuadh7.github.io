@@ -139,6 +139,8 @@ export function ProjectPlaygroundProjectPage() {
                 <img
                   src={item.src}
                   alt={item.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-64 object-cover object-top"
                 />
                 <span className="block px-3 py-2 text-xs text-muted">
@@ -164,6 +166,8 @@ export function ProjectPlaygroundProjectPage() {
             <img
               src={figmaMakeImage}
               alt="Figma Make interface used for LLM-assisted UI generation research"
+              loading="lazy"
+              decoding="async"
               className="w-full h-auto object-cover"
             />
             <figcaption className="px-3 py-2 text-xs text-muted">
@@ -245,6 +249,7 @@ export function ProjectPlaygroundProjectPage() {
               <img
                 src={activeIrisItem.src}
                 alt={activeIrisItem.alt}
+                decoding="async"
                 className="max-h-[75vh] max-w-full w-auto object-contain rounded-lg border border-white/20 bg-black"
               />
               <p className="text-sm text-white/90 text-center">

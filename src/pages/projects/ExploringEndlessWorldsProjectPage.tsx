@@ -163,6 +163,8 @@ export function ExploringEndlessWorldsProjectPage() {
             <img
               src={hyperJumpTopViewGif}
               alt="Top-view HyperJump animation showing continuous movement combined with periodic jumps"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <figcaption className="px-4 py-3 text-sm text-muted">
@@ -191,6 +193,8 @@ export function ExploringEndlessWorldsProjectPage() {
                   <img
                     src={getYouTubeThumbnail(video.embedUrl)}
                     alt={`Preview thumbnail for ${video.title}`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-44 object-cover"
                   />
                   <span className="absolute inset-0 flex items-center justify-center bg-black/25">
