@@ -34,6 +34,7 @@ interface ProjectPageLayoutProps {
   children?: ReactNode;
   videos?: ProjectVideoEmbed[];
   talks?: ProjectLinkResource[];
+  talksSectionTitle?: string;
   publications?: ProjectPublication[];
 }
 
@@ -47,6 +48,7 @@ export function ProjectPageLayout({
   children,
   videos = [],
   talks = [],
+  talksSectionTitle = "Talks & Online Resources",
   publications = [],
 }: ProjectPageLayoutProps) {
   return (
@@ -125,7 +127,7 @@ export function ProjectPageLayout({
 
           {talks.length > 0 && (
             <section className="mt-10 sm:mt-12">
-              <h2 className="mb-4 text-primary">Talks & Online Resources</h2>
+              <h2 className="mb-4 text-primary">{talksSectionTitle}</h2>
               <ul className="space-y-3">
                 {talks.map((talk) => (
                   <li
