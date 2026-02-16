@@ -13,7 +13,6 @@ const earthgazingImage = "/projects/vr-beyond-ordinary/SIRIUS_Earthgazing.jpg";
 const issScreenshotImage = "/projects/vr-beyond-ordinary/Screen-Shot-ISS.jpg";
 const awedysseyPosterImage =
   "/projects/vr-beyond-ordinary/Awedyssey-Poster-2022-07-10.jpg";
-const zurichPosterPdf = "/projects/vr-beyond-ordinary/poster_zurich.pdf";
 
 interface GalleryItem {
   src: string;
