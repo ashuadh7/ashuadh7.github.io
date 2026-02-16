@@ -141,7 +141,7 @@ export const projects: Project[] = [
     shortDescription: 'Ongoing and ideation-stage collaborations across XR theatre and human-AI interface research.',
     image: '/projects/project-playground/thumbnail.jpg',
     tags: ['Ongoing Work', 'Ideation', 'XR', 'Human-AI Interaction'],
-    year: '2022-Present',
+    year: 'Present',
     fullDescription: 'Project Playground captures active collaborations that are still in exploration mode. It is used to test high-risk ideas quickly, validate technical feasibility, and refine research directions before full publication-ready project framing.',
     objective: 'To run fast, evidence-oriented experiments for ongoing collaborations while keeping scope and disclosure appropriate for active and partially constrained projects.',
     methodology: [

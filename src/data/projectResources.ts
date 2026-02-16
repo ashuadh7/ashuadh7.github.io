@@ -87,6 +87,15 @@ const externalProjectResources: ExternalProjectResource[] = [
     publishedOn: "2026-02-16",
   },
   {
+    id: "project-playground-resource-5",
+    projectId: "project-playground",
+    title: "Figma Make",
+    url: "https://www.figma.com/make/",
+    details: "Tool context for LLM-based UI generation experiments.",
+    linkText: "Open Tool",
+    publishedOn: "2026-02-16",
+  },
+  {
     id: "project-playground-resource-2",
     projectId: "project-playground",
     title: "Dr Owen Brierley - Kingston University",
@@ -111,15 +120,6 @@ const externalProjectResources: ExternalProjectResource[] = [
     url: "https://selenazz.github.io/",
     details: "Collaborator profile.",
     linkText: "View Profile",
-    publishedOn: "2026-02-16",
-  },
-  {
-    id: "project-playground-resource-5",
-    projectId: "project-playground",
-    title: "Figma Make",
-    url: "https://www.figma.com/make/",
-    details: "Tool context for LLM-based UI generation experiments.",
-    linkText: "Open Tool",
     publishedOn: "2026-02-16",
   },
   {
