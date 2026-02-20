@@ -107,7 +107,7 @@ const externalProjectResources: ExternalProjectResource[] = [
   {
     id: "project-playground-resource-3",
     projectId: "project-playground",
-    title: "Emily Kuang - Research Profile",
+    title: "Professor Emily Kuang - York University",
     url: "https://emilykuang.github.io/",
     details: "Collaborator profile (York University).",
     linkText: "View Profile",
@@ -125,7 +125,7 @@ const externalProjectResources: ExternalProjectResource[] = [
   {
     id: "project-playground-resource-6",
     projectId: "project-playground",
-    title: "Meiyappan (Mei) Nagappan - University of Waterloo",
+    title: "Professor Meiyappan (Mei) Nagappan - University of Waterloo",
     url: "https://cs.uwaterloo.ca/~m2nagapp/",
     details: "Collaborator profile for developer tooling/HCI research.",
     linkText: "View Profile",

@@ -125,7 +125,7 @@ export function ProjectPlaygroundProjectPage() {
             Science and the Department of Communication Arts. He completed a PhD
             in Computational Media Design (University of Calgary, 2024) focused
             on virtual rehearsal methods for VR and HCI. VR direction is led by{" "}
-            <strong>Dr Owen Brierley</strong>.
+            <strong>Owen Brierley</strong>.
           </p>
           <div className="grid gap-4 md:grid-cols-2">
             {irisGalleryItems.map((item, index) => (
@@ -154,7 +154,7 @@ export function ProjectPlaygroundProjectPage() {
         <section className="space-y-4">
           <h2 className="text-primary">2) LLM Design-Intent Translation</h2>
           <p className="text-secondary leading-relaxed">
-            I am collaborating with <strong>Emily Kuang</strong> (York
+            I am collaborating with Professor <strong>Emily Kuang</strong> (York
             University) and <strong>Selena Zhang</strong> on a study of how well
             design intentions are preserved when interfaces are generated with
             LLM-based tools.
@@ -181,7 +181,7 @@ export function ProjectPlaygroundProjectPage() {
             3) Developer Vigilance in LLM-Assisted Coding
           </h2>
           <p className="text-secondary leading-relaxed">
-            I am working with <strong>Meiyappan (Mei) Nagappan</strong> on
+            I am working with Professor <strong>Meiyappan (Mei) Nagappan</strong> on
             design directions for interfaces that keep developers cognitively
             engaged, instead of drifting into passive copy-paste patterns when
             using LLMs for code generation.
