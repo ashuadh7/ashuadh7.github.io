@@ -218,8 +218,9 @@ export const booksData: Book[] = [
         id: 'one-hundred-years-of-solitude',
         title: 'One Hundred Years of Solitude',
         authors: ['Gabriel Garcia Marquez'],
-        category: 'wishlist',
+        category: 'reading',
         coverImage: '/books/one-hundred-years-of-solitude/cover.jpg',
+        dateStarted: '2026-02-21'
     },
     {
         id: 'scattered-minds',
