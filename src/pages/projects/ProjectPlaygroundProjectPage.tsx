@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { ProjectPageLayout } from "@/components/projects/ProjectPageLayout";
 import { getProjectTalksAndResources } from "@/data/projectResources";
@@ -69,6 +69,34 @@ export function ProjectPlaygroundProjectPage() {
 
   const activeIrisItem =
     activeIrisIndex === null ? null : irisGalleryItems[activeIrisIndex];
+  const resourceLinksById = talksAndResources.reduce<Record<string, string>>(
+    (links, resource) => {
+      links[resource.id] = resource.url;
+      return links;
+    },
+    {},
+  );
+
+  const renderInlineResourceLink = (
+    label: string,
+    resourceId: string,
+  ): ReactNode => {
+    const url = resourceLinksById[resourceId];
+    if (!url) {
+      return label;
+    }
+
+    return (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-accent hover-text-accent-strong transition-colors"
+      >
+        {label}
+      </a>
+    );
+  };
 
   const showPreviousIris = () => {
     setActiveIrisIndex((current) =>
@@ -113,19 +141,27 @@ export function ProjectPlaygroundProjectPage() {
           <h2 className="text-primary">1) The Nether (UW Theatre)</h2>
           <p className="text-secondary leading-relaxed">
             I am supporting VR technical development for a new staging of{" "}
-            <strong>The Nether</strong> at the University of Waterloo. The
-            production explores a split format where real-world scenes remain
-            live on stage while virtual-world scenes are experienced in VR.
-            Earlier productions represented virtual spaces mainly with props;
-            this version aims for direct VR embodiment of those scenes.
+            {renderInlineResourceLink(
+              "The Nether",
+              "project-playground-resource-1",
+            )}{" "}
+            at the University of Waterloo. The production explores a split
+            format where real-world scenes remain live on stage while
+            virtual-world scenes are experienced in VR. Earlier productions
+            represented virtual spaces mainly with props; this version aims for
+            direct VR embodiment of those scenes.
           </p>
           <p className="text-secondary leading-relaxed">
-            Directed by <strong>Zachary McKendrick</strong>, whose practice
+            Directed by Zachary McKendrick, whose practice
             spans drama, XR, and HCI across the Cheriton School of Computer
             Science and the Department of Communication Arts. He completed a PhD
             in Computational Media Design (University of Calgary, 2024) focused
             on virtual rehearsal methods for VR and HCI. VR direction is led by{" "}
-            <strong>Owen Brierley</strong>.
+            {renderInlineResourceLink(
+              "Owen Brierley",
+              "project-playground-resource-2",
+            )}
+            .
           </p>
           <div className="grid gap-4 md:grid-cols-2">
             {irisGalleryItems.map((item, index) => (
@@ -154,13 +190,26 @@ export function ProjectPlaygroundProjectPage() {
         <section className="space-y-4">
           <h2 className="text-primary">2) LLM Design-Intent Translation</h2>
           <p className="text-secondary leading-relaxed">
-            I am collaborating with Professor <strong>Emily Kuang</strong> (York
-            University) and <strong>Selena Zhang</strong> on a study of how well
-            design intentions are preserved when interfaces are generated with
-            LLM-based tools.
+            I am collaborating with Professor{" "}
+            {renderInlineResourceLink(
+              "Emily Kuang",
+              "project-playground-resource-3",
+            )}{" "}
+            (York University) and{" "}
+            {renderInlineResourceLink(
+              "Selena Zhang",
+              "project-playground-resource-4",
+            )}{" "}
+            on a study of how well design intentions are preserved when
+            interfaces are generated with LLM-based tools.
           </p>
           <p className="text-secondary leading-relaxed">
-            The current workflow uses Figma Make as the prototyping environment.
+            The current workflow uses{" "}
+            {renderInlineResourceLink(
+              "Figma Make",
+              "project-playground-resource-5",
+            )}{" "}
+            as the prototyping environment.
           </p>
           <figure className="rounded-lg overflow-hidden border border-default bg-soft">
             <img
@@ -181,8 +230,12 @@ export function ProjectPlaygroundProjectPage() {
             3) Developer Vigilance in LLM-Assisted Coding
           </h2>
           <p className="text-secondary leading-relaxed">
-            I am working with Professor <strong>Meiyappan (Mei) Nagappan</strong> on
-            design directions for interfaces that keep developers cognitively
+            I am working with Professor{" "}
+            {renderInlineResourceLink(
+              "Meiyappan (Mei) Nagappan",
+              "project-playground-resource-6",
+            )}{" "}
+            on design directions for interfaces that keep developers cognitively
             engaged, instead of drifting into passive copy-paste patterns when
             using LLMs for code generation.
           </p>
@@ -193,19 +246,22 @@ export function ProjectPlaygroundProjectPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-primary">Working Style</h2>
-          <ul className="space-y-2">
-            {[
-              "Shareable details are intentionally limited while projects are active.",
-              "Most outputs here are exploratory prototypes, not final deployments.",
-              "Promising tracks graduate into standalone projects with fuller documentation.",
-            ].map((item) => (
-              <li key={item} className="text-secondary flex gap-3">
-                <span className="text-accent flex-shrink-0">-</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <h2 className="text-primary">
+            4) VR Poster
+          </h2>
+          <p className="text-secondary leading-relaxed">
+            I am working with Professor{" "}
+            {renderInlineResourceLink(
+              "Matt Brehmer",
+              "project-playground-resource-8",
+            )}{" "}
+            and Alan Wu along with my PhD Supervisor Professor{" "}
+            {renderInlineResourceLink("Jian Zhao", "project-playground-resource-7")}{" "}
+            on a VR poster concept for academic conferences. The idea is to
+            create an immersive, interactive poster experience that goes beyond
+            static visuals to better communicate research contributions and
+            engage viewers in novel ways.
+          </p>
         </section>
       </ProjectPageLayout>
 
